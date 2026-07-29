@@ -1,0 +1,10 @@
+mode,case,P_Gauss,local_Gauss_checks,wilson_expectation,string_sector,interpretation
+ideal,no_error,1.0,pass,1.0,correct,target state
+ideal,gauge_violating,0.0,fail,1.0,correct,detected by Gauss syndrome
+ideal,gauge_preserving_string,1.0,pass,-1.0,wrong,blind spot of Gauss-only syndrome
+noisy,no_error,0.89595,pass,0.8725,correct,target state
+noisy,gauge_violating,0.0329,fail,0.8769,correct,detected by Gauss syndrome
+noisy,gauge_preserving_string,0.89535,pass,-0.8763,wrong,blind spot of Gauss-only syndrome
+iqm,no_error,0.9432,pass,0.9224,correct,target state
+iqm,gauge_violating,0.0314,fail,0.9352,correct,detected by Gauss syndrome
+iqm,gauge_preserving_string,0.939,pass,-0.9044,wrong,blind spot of Gauss-only syndrome

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "z2-gauss-wilson-benchmark"
+version = "0.1.0"
+description = "String-aware Z2 Gauss-law diagnostic benchmark"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "matplotlib>=3.8",
+  "qiskit>=2.0",
+  "qiskit-aer>=0.16",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+iqm = ["iqm-client[qiskit]>=34,<35"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,4 @@
+case,backend,p_gauss,p_gauss_err,wilson,wilson_err,interpretation
+no_error,AerSimulator,1.0,0.0,1.0,0.0,target state: Gauss checks pass and Wilson sector is correct
+gauge_violating,AerSimulator,0.0,0.0,1.0,0.0,detected by at least one local Gauss check
+gauge_preserving_string,AerSimulator,1.0,0.0,-1.0,0.0,"Gauss-only blind spot: physical local sector, wrong Wilson sector"

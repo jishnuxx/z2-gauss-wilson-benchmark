@@ -1,0 +1,148 @@
+{
+  "claims_verified": {
+    "gauge_violating_flips_a_check": true,
+    "string_error_flips_W": true,
+    "string_error_preserves_all_checks": true,
+    "target_is_physical_and_W_plus": true
+  },
+  "errors": {
+    "gauge_preserving_string": {
+      "expectations_after_error": {
+        "G0": 0.9999999999999998,
+        "G1": 0.9999999999999998,
+        "G2": 0.9999999999999998,
+        "G3": 0.9999999999999998,
+        "W": -0.9999999999999998
+      },
+      "gauss_relations": {
+        "G0": {
+          "anticommutator_frobenius_norm": 8.0,
+          "commutator_frobenius_norm": 0.0,
+          "relation": "commutes"
+        },
+        "G1": {
+          "anticommutator_frobenius_norm": 8.0,
+          "commutator_frobenius_norm": 0.0,
+          "relation": "commutes"
+        },
+        "G2": {
+          "anticommutator_frobenius_norm": 8.0,
+          "commutator_frobenius_norm": 0.0,
+          "relation": "commutes"
+        },
+        "G3": {
+          "anticommutator_frobenius_norm": 8.0,
+          "commutator_frobenius_norm": 0.0,
+          "relation": "commutes"
+        }
+      },
+      "operator": "IIIX",
+      "wilson_relation": "anticommutes"
+    },
+    "gauge_violating": {
+      "expectations_after_error": {
+        "G0": -0.9999999999999998,
+        "G1": 0.9999999999999998,
+        "G2": 0.9999999999999998,
+        "G3": -0.9999999999999998,
+        "W": 0.9999999999999998
+      },
+      "gauss_relations": {
+        "G0": {
+          "anticommutator_frobenius_norm": 0.0,
+          "commutator_frobenius_norm": 8.0,
+          "relation": "anticommutes"
+        },
+        "G1": {
+          "anticommutator_frobenius_norm": 8.0,
+          "commutator_frobenius_norm": 0.0,
+          "relation": "commutes"
+        },
+        "G2": {
+          "anticommutator_frobenius_norm": 8.0,
+          "commutator_frobenius_norm": 0.0,
+          "relation": "commutes"
+        },
+        "G3": {
+          "anticommutator_frobenius_norm": 0.0,
+          "commutator_frobenius_norm": 8.0,
+          "relation": "anticommutes"
+        }
+      },
+      "operator": "IIIZ",
+      "wilson_relation": "commutes"
+    },
+    "no_error": {
+      "expectations_after_error": {
+        "G0": 0.9999999999999998,
+        "G1": 0.9999999999999998,
+        "G2": 0.9999999999999998,
+        "G3": 0.9999999999999998,
+        "W": 0.9999999999999998
+      },
+      "gauss_relations": {
+        "G0": {
+          "anticommutator_frobenius_norm": 8.0,
+          "commutator_frobenius_norm": 0.0,
+          "relation": "commutes"
+        },
+        "G1": {
+          "anticommutator_frobenius_norm": 8.0,
+          "commutator_frobenius_norm": 0.0,
+          "relation": "commutes"
+        },
+        "G2": {
+          "anticommutator_frobenius_norm": 8.0,
+          "commutator_frobenius_norm": 0.0,
+          "relation": "commutes"
+        },
+        "G3": {
+          "anticommutator_frobenius_norm": 8.0,
+          "commutator_frobenius_norm": 0.0,
+          "relation": "commutes"
+        }
+      },
+      "operator": "IIII",
+      "wilson_relation": "commutes"
+    }
+  },
+  "model": {
+    "errors": {
+      "gauge_preserving_string": "IIIX",
+      "gauge_violating": "IIIZ",
+      "no_error": "IIII"
+    },
+    "gauss_checks": [
+      "IIXX",
+      "IXXI",
+      "XXII",
+      "XIIX"
+    ],
+    "independent_gauss_checks": [
+      "G0",
+      "G1",
+      "G2"
+    ],
+    "n_ancilla_qubits": 1,
+    "n_data_qubits": 4,
+    "name": "four_link_periodic_square",
+    "qubit_order": "q0,q1,q2,q3 around the square",
+    "redundancy": "G3 = G0 G1 G2",
+    "target_sector": {
+      "G0": 1,
+      "G1": 1,
+      "G2": 1,
+      "G3": 1,
+      "W": 1
+    },
+    "wilson": "ZZZZ"
+  },
+  "target_expectations": {
+    "G0": 0.9999999999999998,
+    "G1": 0.9999999999999998,
+    "G2": 0.9999999999999998,
+    "G3": 0.9999999999999998,
+    "W": 0.9999999999999998
+  },
+  "target_norm": 0.9999999999999998
+}

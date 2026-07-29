@@ -1,0 +1,520 @@
+{
+  "all_tests_passed": true,
+  "approved_at_utc": "2026-07-11T20:24:42.999666+00:00",
+  "approved_by": "jishnu",
+  "backend_name": "IQMBackend",
+  "backend_qubit_count": 53,
+  "backend_run_called": true,
+  "batch": "periodic-two-sector-t0.8-dt0.4",
+  "calibration_set_id": "548516b7-6a1b-41b7-95cb-8e9992f0095c",
+  "candidate_id": "2c46432e3de316ae56722c47014d427e172bca15c6a1676a617408e99fee5d54",
+  "circuits": [
+    {
+      "case": "Wplus",
+      "cz_count": 100,
+      "cz_pairs": [
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.009822619824221168,
+          "physical_qubits": [
+            8,
+            9
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.007981031293640362,
+          "physical_qubits": [
+            8,
+            16
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0018396697313868282,
+          "physical_qubits": [
+            10,
+            9
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.006720324844403991,
+          "physical_qubits": [
+            10,
+            18
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0030426797657640003,
+          "physical_qubits": [
+            15,
+            16
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0019908794331647828,
+          "physical_qubits": [
+            15,
+            23
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.00392575020469077,
+          "physical_qubits": [
+            17,
+            9
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.006760239952796621,
+          "physical_qubits": [
+            17,
+            16
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.006006542187468211,
+          "physical_qubits": [
+            17,
+            18
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.01169451181866521,
+          "physical_qubits": [
+            17,
+            25
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.002407619840261166,
+          "physical_qubits": [
+            24,
+            16
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.002052037930838413,
+          "physical_qubits": [
+            24,
+            23
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.002926411327522027,
+          "physical_qubits": [
+            24,
+            25
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0057106150622080465,
+          "physical_qubits": [
+            26,
+            18
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0018283922455282209,
+          "physical_qubits": [
+            26,
+            25
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.00214996433933079,
+          "physical_qubits": [
+            33,
+            25
+          ]
+        }
+      ],
+      "depth": 134,
+      "logical_to_physical": [
+        24,
+        15,
+        16,
+        33,
+        17,
+        9,
+        18,
+        25,
+        23,
+        8,
+        26,
+        10
+      ],
+      "measurements": [
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.01934999999999998,
+          "physical_qubit": 8
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.01200000000000001,
+          "physical_qubit": 10
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.008099999999999996,
+          "physical_qubit": 15
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.007549999999999946,
+          "physical_qubit": 17
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.01639999999999997,
+          "physical_qubit": 23
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.007600000000000051,
+          "physical_qubit": 24
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.010249999999999981,
+          "physical_qubit": 26
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.010950000000000015,
+          "physical_qubit": 33
+        }
+      ],
+      "operations": {
+        "barrier": 2,
+        "cz": 100,
+        "measure": 8,
+        "r": 173
+      },
+      "qasm": "results/iqm/emerald_periodic_candidate/circuits/periodic_Wplus.qasm",
+      "qasm_sha256": "41ae5379253b026fc678d4528a706c2ec8ae435116d3fb700064a696617b843d",
+      "qpy": "results/iqm/emerald_periodic_candidate/circuits/periodic_Wplus.qpy",
+      "qpy_sha256": "265f59a810af59fba94daf54f052cc10d3eac180ab1c8905f536e931a4ce2e59",
+      "two_qubit_gate_count": 100,
+      "wilson_sector": 1
+    },
+    {
+      "case": "Wminus",
+      "cz_count": 100,
+      "cz_pairs": [
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.009822619824221168,
+          "physical_qubits": [
+            8,
+            9
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.007981031293640362,
+          "physical_qubits": [
+            8,
+            16
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0018396697313868282,
+          "physical_qubits": [
+            10,
+            9
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.006720324844403991,
+          "physical_qubits": [
+            10,
+            18
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0030426797657640003,
+          "physical_qubits": [
+            15,
+            16
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0019908794331647828,
+          "physical_qubits": [
+            15,
+            23
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.00392575020469077,
+          "physical_qubits": [
+            17,
+            9
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.006760239952796621,
+          "physical_qubits": [
+            17,
+            16
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.006006542187468211,
+          "physical_qubits": [
+            17,
+            18
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.01169451181866521,
+          "physical_qubits": [
+            17,
+            25
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.002407619840261166,
+          "physical_qubits": [
+            24,
+            16
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.002052037930838413,
+          "physical_qubits": [
+            24,
+            23
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.002926411327522027,
+          "physical_qubits": [
+            24,
+            25
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0057106150622080465,
+          "physical_qubits": [
+            26,
+            18
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0018283922455282209,
+          "physical_qubits": [
+            26,
+            25
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.00214996433933079,
+          "physical_qubits": [
+            33,
+            25
+          ]
+        }
+      ],
+      "depth": 134,
+      "logical_to_physical": [
+        24,
+        15,
+        16,
+        33,
+        17,
+        9,
+        18,
+        25,
+        23,
+        8,
+        26,
+        10
+      ],
+      "measurements": [
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.01934999999999998,
+          "physical_qubit": 8
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.01200000000000001,
+          "physical_qubit": 10
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.008099999999999996,
+          "physical_qubit": 15
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.007549999999999946,
+          "physical_qubit": 17
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.01639999999999997,
+          "physical_qubit": 23
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.007600000000000051,
+          "physical_qubit": 24
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.010249999999999981,
+          "physical_qubit": 26
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.010950000000000015,
+          "physical_qubit": 33
+        }
+      ],
+      "operations": {
+        "barrier": 2,
+        "cz": 100,
+        "measure": 8,
+        "r": 173
+      },
+      "qasm": "results/iqm/emerald_periodic_candidate/circuits/periodic_Wminus.qasm",
+      "qasm_sha256": "b59e59732727d6cbad1923ff000cd98266e64101363497ac0ad54b6f910cde61",
+      "qpy": "results/iqm/emerald_periodic_candidate/circuits/periodic_Wminus.qpy",
+      "qpy_sha256": "75eb63d875677b53a97aada812c29efea26126fca45b2f3e70d9762738e951a5",
+      "two_qubit_gate_count": 100,
+      "wilson_sector": -1
+    }
+  ],
+  "circuits_frozen": true,
+  "dt": 0.4,
+  "generated_at_utc": "2026-07-11T12:29:08.172359+00:00",
+  "hardware_checks": {
+    "maximum_cz_error": true,
+    "maximum_native_cz_count": true,
+    "maximum_native_depth": true,
+    "maximum_readout_error": true,
+    "same_mapping_for_both_sectors": true
+  },
+  "hardware_credits_consumed": true,
+  "hardware_submitted": true,
+  "hardware_thresholds": {
+    "maximum_cz_error": 0.015,
+    "maximum_native_cz_count": 100,
+    "maximum_native_depth": 140,
+    "maximum_readout_error": 0.025
+  },
+  "human_review_approved": true,
+  "job_id": "019f74ca-1c78-7983-8a8f-97974909067e",
+  "maximum_cz_error": 0.01169451181866521,
+  "maximum_native_cz_count": 100,
+  "maximum_native_depth": 134,
+  "maximum_readout_error": 0.01934999999999998,
+  "native_operations": [
+    "id",
+    "delay",
+    "measure",
+    "r",
+    "if_else",
+    "reset",
+    "cz"
+  ],
+  "optimization_level": 3,
+  "physics_metrics": {
+    "algorithmic_checks": {
+      "minimum_separation_retained": true,
+      "minimum_state_fidelity": true,
+      "minimum_trotter_sector_separation": true
+    },
+    "algorithmic_gate_passed": true,
+    "candidate": "t=0.8,dt=0.4",
+    "dt": 0.4,
+    "exact_Wminus_imbalance": 0.021977967401874576,
+    "exact_Wplus_imbalance": 0.22782501531500213,
+    "exact_sector_separation": 0.20584704791312755,
+    "maximum_absolute_trotter_observable_error": 0.038420076197474645,
+    "minimum_gauss_expectation": 0.9999999999999899,
+    "minimum_state_fidelity": 0.9120835591783525,
+    "separation_retained": 0.7232012895212099,
+    "source_max_depth": 138,
+    "source_max_two_qubit_gate_count": 80,
+    "source_measurement_count": 8,
+    "source_qubit_count": 12,
+    "source_resources": {
+      "Wminus": {
+        "depth": 138,
+        "measurement_count": 8,
+        "qubit_count": 12,
+        "two_qubit_gate_count": 80
+      },
+      "Wplus": {
+        "depth": 138,
+        "measurement_count": 8,
+        "qubit_count": 12,
+        "two_qubit_gate_count": 80
+      }
+    },
+    "time": 0.8,
+    "trotter_Wminus_imbalance": 0.04053608862261937,
+    "trotter_Wminus_wilson": -0.9999999999999899,
+    "trotter_Wplus_imbalance": 0.18940493911752748,
+    "trotter_Wplus_wilson": 0.9999999999999899,
+    "trotter_sector_separation": 0.1488688504949081,
+    "trotter_steps": 2
+  },
+  "qpy_sha256": [
+    "265f59a810af59fba94daf54f052cc10d3eac180ab1c8905f536e931a4ce2e59",
+    "75eb63d875677b53a97aada812c29efea26126fca45b2f3e70d9762738e951a5"
+  ],
+  "quantum_computer": "emerald",
+  "request_type": "PostJobsRequest",
+  "request_validated": true,
+  "result_completed": true,
+  "result_completed_at_utc": "2026-07-18T10:33:58.322652+00:00",
+  "review_note": "Review calibration, mappings, errors, hashes, shots, and credit budget. Approval records review only; hardware execution is a separate opt-in step.",
+  "schema_version": 1,
+  "seed_transpiler": 7,
+  "server_url": "https://resonance.meetiqm.com",
+  "shots": 1000,
+  "hardware_execution_started": true,
+  "hardware_execution_started_at_utc": "2026-07-18T10:33:49.984159+00:00",
+  "submitted_at_utc": "2026-07-18T10:33:50.479475+00:00",
+  "test_output": "........................................................................ [ 93%]\n.....                                                                    [100%]\n77 passed in 18.01s",
+  "time": 0.8,
+  "trotter_steps": 2,
+  "use_metrics": true,
+  "wilson_sectors": {
+    "Wminus": -1,
+    "Wplus": 1
+  }
+}

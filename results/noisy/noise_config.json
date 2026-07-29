@@ -1,0 +1,5 @@
+{
+  "readout": 0.02,
+  "single_qubit": 0.001,
+  "two_qubit": 0.01
+}

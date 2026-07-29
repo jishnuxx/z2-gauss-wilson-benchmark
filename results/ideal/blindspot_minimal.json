@@ -1,0 +1,723 @@
+{
+  "backend_name": "AerSimulator",
+  "depth_scan": [
+    {
+      "analysis": {
+        "P_Gauss": 1.0,
+        "P_Gauss_se": 0.0,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": 1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0
+        },
+        "gauss_only_accepted_shots": 5000,
+        "gauss_plus_string_acceptance": 1.0,
+        "gauss_plus_string_acceptance_se": 0.0,
+        "gauss_plus_string_accepted_shots": 5000,
+        "shots": 5000,
+        "string_sector_correct_probability": 1.0,
+        "string_sector_correct_probability_se": 0.0,
+        "wilson_expectation": 1.0,
+        "wilson_expectation_se": 0.0
+      },
+      "compiled_depth": 19,
+      "counts": {
+        "0000": 5000
+      },
+      "idle_layers": 0
+    },
+    {
+      "analysis": {
+        "P_Gauss": 1.0,
+        "P_Gauss_se": 0.0,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": 1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0
+        },
+        "gauss_only_accepted_shots": 5000,
+        "gauss_plus_string_acceptance": 1.0,
+        "gauss_plus_string_acceptance_se": 0.0,
+        "gauss_plus_string_accepted_shots": 5000,
+        "shots": 5000,
+        "string_sector_correct_probability": 1.0,
+        "string_sector_correct_probability_se": 0.0,
+        "wilson_expectation": 1.0,
+        "wilson_expectation_se": 0.0
+      },
+      "compiled_depth": 19,
+      "counts": {
+        "0000": 5000
+      },
+      "idle_layers": 2
+    },
+    {
+      "analysis": {
+        "P_Gauss": 1.0,
+        "P_Gauss_se": 0.0,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": 1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0
+        },
+        "gauss_only_accepted_shots": 5000,
+        "gauss_plus_string_acceptance": 1.0,
+        "gauss_plus_string_acceptance_se": 0.0,
+        "gauss_plus_string_accepted_shots": 5000,
+        "shots": 5000,
+        "string_sector_correct_probability": 1.0,
+        "string_sector_correct_probability_se": 0.0,
+        "wilson_expectation": 1.0,
+        "wilson_expectation_se": 0.0
+      },
+      "compiled_depth": 19,
+      "counts": {
+        "0000": 5000
+      },
+      "idle_layers": 4
+    },
+    {
+      "analysis": {
+        "P_Gauss": 1.0,
+        "P_Gauss_se": 0.0,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": 1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0
+        },
+        "gauss_only_accepted_shots": 5000,
+        "gauss_plus_string_acceptance": 1.0,
+        "gauss_plus_string_acceptance_se": 0.0,
+        "gauss_plus_string_accepted_shots": 5000,
+        "shots": 5000,
+        "string_sector_correct_probability": 1.0,
+        "string_sector_correct_probability_se": 0.0,
+        "wilson_expectation": 1.0,
+        "wilson_expectation_se": 0.0
+      },
+      "compiled_depth": 19,
+      "counts": {
+        "0000": 5000
+      },
+      "idle_layers": 8
+    },
+    {
+      "analysis": {
+        "P_Gauss": 1.0,
+        "P_Gauss_se": 0.0,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": 1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0
+        },
+        "gauss_only_accepted_shots": 5000,
+        "gauss_plus_string_acceptance": 1.0,
+        "gauss_plus_string_acceptance_se": 0.0,
+        "gauss_plus_string_accepted_shots": 5000,
+        "shots": 5000,
+        "string_sector_correct_probability": 1.0,
+        "string_sector_correct_probability_se": 0.0,
+        "wilson_expectation": 1.0,
+        "wilson_expectation_se": 0.0
+      },
+      "compiled_depth": 19,
+      "counts": {
+        "0000": 5000
+      },
+      "idle_layers": 16
+    },
+    {
+      "analysis": {
+        "P_Gauss": 1.0,
+        "P_Gauss_se": 0.0,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": 1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0
+        },
+        "gauss_only_accepted_shots": 5000,
+        "gauss_plus_string_acceptance": 1.0,
+        "gauss_plus_string_acceptance_se": 0.0,
+        "gauss_plus_string_accepted_shots": 5000,
+        "shots": 5000,
+        "string_sector_correct_probability": 1.0,
+        "string_sector_correct_probability_se": 0.0,
+        "wilson_expectation": 1.0,
+        "wilson_expectation_se": 0.0
+      },
+      "compiled_depth": 19,
+      "counts": {
+        "0000": 5000
+      },
+      "idle_layers": 32
+    }
+  ],
+  "mode": "ideal",
+  "model_metadata": {
+    "errors": {
+      "gauge_preserving_string": "IIIX",
+      "gauge_violating": "IIIZ",
+      "no_error": "IIII"
+    },
+    "gauss_checks": [
+      "IIXX",
+      "IXXI",
+      "XXII",
+      "XIIX"
+    ],
+    "independent_gauss_checks": [
+      "G0",
+      "G1",
+      "G2"
+    ],
+    "n_ancilla_qubits": 1,
+    "n_data_qubits": 4,
+    "name": "four_link_periodic_square",
+    "qubit_order": "q0,q1,q2,q3 around the square",
+    "redundancy": "G3 = G0 G1 G2",
+    "target_sector": {
+      "G0": 1,
+      "G1": 1,
+      "G2": 1,
+      "G3": 1,
+      "W": 1
+    },
+    "wilson": "ZZZZ"
+  },
+  "noise_config": null,
+  "records": [
+    {
+      "analysis": {
+        "P_Gauss": 1.0,
+        "P_Gauss_se": 0.0,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": 1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0
+        },
+        "gauss_only_accepted_shots": 20000,
+        "gauss_plus_string_acceptance": 1.0,
+        "gauss_plus_string_acceptance_se": 0.0,
+        "gauss_plus_string_accepted_shots": 20000,
+        "shots": 20000,
+        "string_sector_correct_probability": 1.0,
+        "string_sector_correct_probability_se": 0.0,
+        "wilson_expectation": 1.0,
+        "wilson_expectation_se": 0.0
+      },
+      "backend_name": "AerSimulator",
+      "circuit_label": "no_error_joint",
+      "error_type": "no_error",
+      "expected": {
+        "P_Gauss": 1.0,
+        "wilson_expectation": 1.0
+      },
+      "expected_gauss_sector": "+1 all checks",
+      "expected_string_sector": "+1",
+      "mode": "ideal",
+      "raw_counts": {
+        "0000": 20000
+      },
+      "resource_metrics": {
+        "depth": 19,
+        "measurement_count": 4,
+        "qubit_count": 4,
+        "two_qubit_gate_count": 6
+      },
+      "shots": 20000
+    },
+    {
+      "analysis": {
+        "P_Gauss": 0.0,
+        "P_Gauss_se": 0.0,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": -1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": -1.0
+        },
+        "gauss_only_accepted_shots": 0,
+        "gauss_plus_string_acceptance": 0.0,
+        "gauss_plus_string_acceptance_se": 0.0,
+        "gauss_plus_string_accepted_shots": 0,
+        "shots": 20000,
+        "string_sector_correct_probability": 1.0,
+        "string_sector_correct_probability_se": 0.0,
+        "wilson_expectation": 1.0,
+        "wilson_expectation_se": 0.0
+      },
+      "backend_name": "AerSimulator",
+      "circuit_label": "gauge_violating_joint",
+      "error_type": "gauge_violating",
+      "expected": {
+        "P_Gauss": 0.0,
+        "wilson_expectation": 1.0
+      },
+      "expected_gauss_sector": "violated",
+      "expected_string_sector": "+1",
+      "mode": "ideal",
+      "raw_counts": {
+        "0010": 20000
+      },
+      "resource_metrics": {
+        "depth": 20,
+        "measurement_count": 4,
+        "qubit_count": 4,
+        "two_qubit_gate_count": 6
+      },
+      "shots": 20000
+    },
+    {
+      "analysis": {
+        "P_Gauss": 1.0,
+        "P_Gauss_se": 0.0,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": 1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0
+        },
+        "gauss_only_accepted_shots": 20000,
+        "gauss_plus_string_acceptance": 0.0,
+        "gauss_plus_string_acceptance_se": 0.0,
+        "gauss_plus_string_accepted_shots": 0,
+        "shots": 20000,
+        "string_sector_correct_probability": 0.0,
+        "string_sector_correct_probability_se": 0.0,
+        "wilson_expectation": -1.0,
+        "wilson_expectation_se": 0.0
+      },
+      "backend_name": "AerSimulator",
+      "circuit_label": "gauge_preserving_string_joint",
+      "error_type": "gauge_preserving_string",
+      "expected": {
+        "P_Gauss": 1.0,
+        "wilson_expectation": -1.0
+      },
+      "expected_gauss_sector": "+1 all checks",
+      "expected_string_sector": "-1",
+      "mode": "ideal",
+      "raw_counts": {
+        "0001": 20000
+      },
+      "resource_metrics": {
+        "depth": 20,
+        "measurement_count": 4,
+        "qubit_count": 4,
+        "two_qubit_gate_count": 6
+      },
+      "shots": 20000
+    }
+  ],
+  "response": {
+    "bit_order": "integer index of (W,G0,G1,G2), W least significant",
+    "matrix_measured_given_true": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "raw_records": [
+      {
+        "counts": {
+          "0000": 5000
+        },
+        "true_syndrome": 0
+      },
+      {
+        "counts": {
+          "0001": 5000
+        },
+        "true_syndrome": 1
+      },
+      {
+        "counts": {
+          "0010": 5000
+        },
+        "true_syndrome": 2
+      },
+      {
+        "counts": {
+          "0011": 5000
+        },
+        "true_syndrome": 3
+      },
+      {
+        "counts": {
+          "0100": 5000
+        },
+        "true_syndrome": 4
+      },
+      {
+        "counts": {
+          "0101": 5000
+        },
+        "true_syndrome": 5
+      },
+      {
+        "counts": {
+          "0110": 5000
+        },
+        "true_syndrome": 6
+      },
+      {
+        "counts": {
+          "0111": 5000
+        },
+        "true_syndrome": 7
+      },
+      {
+        "counts": {
+          "1000": 5000
+        },
+        "true_syndrome": 8
+      },
+      {
+        "counts": {
+          "1001": 5000
+        },
+        "true_syndrome": 9
+      },
+      {
+        "counts": {
+          "1010": 5000
+        },
+        "true_syndrome": 10
+      },
+      {
+        "counts": {
+          "1011": 5000
+        },
+        "true_syndrome": 11
+      },
+      {
+        "counts": {
+          "1100": 5000
+        },
+        "true_syndrome": 12
+      },
+      {
+        "counts": {
+          "1101": 5000
+        },
+        "true_syndrome": 13
+      },
+      {
+        "counts": {
+          "1110": 5000
+        },
+        "true_syndrome": 14
+      },
+      {
+        "counts": {
+          "1111": 5000
+        },
+        "true_syndrome": 15
+      }
+    ],
+    "shots_per_column": 5000
+  },
+  "schema_version": 1,
+  "seed": 12345,
+  "shots": 20000
+}

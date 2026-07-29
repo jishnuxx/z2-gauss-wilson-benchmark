@@ -1,0 +1,97 @@
+{
+  "description": "ideal joint matter/Gauss/Wilson readout",
+  "exports": {
+    "Wminus": {
+      "qasm": "circuits/periodic/qasm/periodic_joint_Wminus_t0p8_dt0p4.qasm",
+      "qpy": "circuits/periodic/qiskit/periodic_joint_Wminus_t0p8_dt0p4.qpy"
+    },
+    "Wplus": {
+      "qasm": "circuits/periodic/qasm/periodic_joint_Wplus_t0p8_dt0p4.qasm",
+      "qpy": "circuits/periodic/qiskit/periodic_joint_Wplus_t0p8_dt0p4.qpy"
+    }
+  },
+  "records": [
+    {
+      "analysis": {
+        "P_Gauss": 1.0,
+        "P_Gauss_se": 0.0,
+        "gauss_expectations": {
+          "G0": 1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0
+        },
+        "gauss_only_acceptance": 1.0,
+        "gauss_only_imbalance": 0.1964,
+        "gauss_plus_wilson_acceptance": 1.0,
+        "gauss_plus_wilson_imbalance": 0.1964,
+        "imbalance": 0.1964,
+        "imbalance_se": 0.0046814903609854845,
+        "shots": 20000,
+        "wilson_expectation": 1.0,
+        "wilson_target_probability": 1.0
+      },
+      "backend": "AerSimulator-ideal",
+      "case": "Wplus",
+      "dt": 0.4,
+      "raw_counts": {
+        "00000011": 6733,
+        "00000101": 2341,
+        "00000110": 606,
+        "00001001": 4469,
+        "00001010": 3046,
+        "00001100": 2805
+      },
+      "resources": {
+        "depth": 138,
+        "measurement_count": 8,
+        "qubit_count": 12,
+        "two_qubit_gate_count": 80
+      },
+      "time": 0.8,
+      "wilson_sector": 1
+    },
+    {
+      "analysis": {
+        "P_Gauss": 1.0,
+        "P_Gauss_se": 0.0,
+        "gauss_expectations": {
+          "G0": 1.0,
+          "G1": 1.0,
+          "G2": 1.0,
+          "G3": 1.0
+        },
+        "gauss_only_acceptance": 1.0,
+        "gauss_only_imbalance": 0.0431,
+        "gauss_plus_wilson_acceptance": 0.0,
+        "gauss_plus_wilson_imbalance": null,
+        "imbalance": 0.0431,
+        "imbalance_se": 0.004791358836488872,
+        "shots": 20000,
+        "wilson_expectation": -1.0,
+        "wilson_target_probability": 0.0
+      },
+      "backend": "AerSimulator-ideal",
+      "case": "Wminus",
+      "dt": 0.4,
+      "raw_counts": {
+        "10000011": 5041,
+        "10000101": 3239,
+        "10000110": 177,
+        "10001001": 1327,
+        "10001010": 6037,
+        "10001100": 4179
+      },
+      "resources": {
+        "depth": 138,
+        "measurement_count": 8,
+        "qubit_count": 12,
+        "two_qubit_gate_count": 80
+      },
+      "time": 0.8,
+      "wilson_sector": -1
+    }
+  ],
+  "schema_version": 1,
+  "shots": 20000
+}

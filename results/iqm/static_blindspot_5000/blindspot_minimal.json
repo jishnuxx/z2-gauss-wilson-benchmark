@@ -1,0 +1,195 @@
+{
+  "backend_name": "IQMBackend",
+  "batch": "blindspot-minimal",
+  "calibration_set_id": "314aeb78-d1ec-418f-b1f2-9ab488ff820e",
+  "candidate_id": "a2054490d694845a413c9e2d4694d6fa92a9a70d6fa82b296c50c73cebd35401",
+  "job_id": "019f7749-5d66-7e71-961d-1ce1de04e5d6",
+  "mode": "iqm",
+  "model_metadata": {
+    "errors": {
+      "gauge_preserving_string": "IIIX",
+      "gauge_violating": "IIIZ",
+      "no_error": "IIII"
+    },
+    "gauss_checks": [
+      "IIXX",
+      "IXXI",
+      "XXII",
+      "XIIX"
+    ],
+    "independent_gauss_checks": [
+      "G0",
+      "G1",
+      "G2"
+    ],
+    "n_ancilla_qubits": 1,
+    "n_data_qubits": 4,
+    "name": "four_link_periodic_square",
+    "qubit_order": "q0,q1,q2,q3 around the square",
+    "redundancy": "G3 = G0 G1 G2",
+    "target_sector": {
+      "G0": 1,
+      "G1": 1,
+      "G2": 1,
+      "G3": 1,
+      "W": 1
+    },
+    "wilson": "ZZZZ"
+  },
+  "quantum_computer": "emerald",
+  "records": [
+    {
+      "analysis": {
+        "P_Gauss": 0.9432,
+        "P_Gauss_se": 0.0032733395790843322,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": 0.9364,
+          "G1": 0.9632,
+          "G2": 0.9688,
+          "G3": 0.9036
+        },
+        "gauss_only_accepted_shots": 4716,
+        "gauss_plus_string_acceptance": 0.921,
+        "gauss_plus_string_acceptance_se": 0.0038146821623826,
+        "gauss_plus_string_accepted_shots": 4605,
+        "shots": 5000,
+        "string_sector_correct_probability": 0.9612,
+        "string_sector_correct_probability_se": 0.0027311008769358904,
+        "wilson_expectation": 0.9224,
+        "wilson_expectation_se": 0.005462201753871781
+      },
+      "backend_name": "IQMBackend",
+      "calibration_set_id": "314aeb78-d1ec-418f-b1f2-9ab488ff820e",
+      "circuit_label": "no_error_joint",
+      "error_type": "no_error",
+      "expected": {
+        "P_Gauss": 1.0,
+        "wilson_expectation": 1.0
+      },
+      "mode": "iqm",
+      "quantum_computer": "emerald",
+      "raw_counts": {
+        "0000": 4605,
+        "0001": 111,
+        "0010": 92,
+        "0011": 40,
+        "0100": 33,
+        "0101": 17,
+        "0110": 8,
+        "0111": 16,
+        "1000": 53,
+        "1001": 5,
+        "1010": 2,
+        "1100": 12,
+        "1101": 5,
+        "1110": 1
+      },
+      "shots": 5000
+    },
+    {
+      "analysis": {
+        "P_Gauss": 0.0314,
+        "P_Gauss_se": 0.0024663349326480375,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": -0.924,
+          "G1": 0.9624,
+          "G2": 0.9688,
+          "G3": -0.8952
+        },
+        "gauss_only_accepted_shots": 157,
+        "gauss_plus_string_acceptance": 0.0232,
+        "gauss_plus_string_acceptance_se": 0.0021289321266775977,
+        "gauss_plus_string_accepted_shots": 116,
+        "shots": 5000,
+        "string_sector_correct_probability": 0.9676,
+        "string_sector_correct_probability_se": 0.0025040063897682043,
+        "wilson_expectation": 0.9352,
+        "wilson_expectation_se": 0.005008012779536409
+      },
+      "backend_name": "IQMBackend",
+      "calibration_set_id": "314aeb78-d1ec-418f-b1f2-9ab488ff820e",
+      "circuit_label": "gauge_violating_joint",
+      "error_type": "gauge_violating",
+      "expected": {
+        "P_Gauss": 0.0,
+        "wilson_expectation": 1.0
+      },
+      "mode": "iqm",
+      "quantum_computer": "emerald",
+      "raw_counts": {
+        "0000": 116,
+        "0001": 41,
+        "0010": 4620,
+        "0011": 72,
+        "0100": 13,
+        "0101": 13,
+        "0110": 32,
+        "0111": 15,
+        "1000": 2,
+        "1001": 1,
+        "1010": 46,
+        "1011": 8,
+        "1100": 1,
+        "1101": 3,
+        "1110": 8,
+        "1111": 9
+      },
+      "shots": 5000
+    },
+    {
+      "analysis": {
+        "P_Gauss": 0.939,
+        "P_Gauss_se": 0.0033846417831138362,
+        "all_shots_acceptance": 1.0,
+        "gauss_expectations": {
+          "G0": 0.9284,
+          "G1": 0.9488,
+          "G2": 0.968,
+          "G3": 0.9084
+        },
+        "gauss_only_accepted_shots": 4695,
+        "gauss_plus_string_acceptance": 0.027,
+        "gauss_plus_string_acceptance_se": 0.002292204179387168,
+        "gauss_plus_string_accepted_shots": 135,
+        "shots": 5000,
+        "string_sector_correct_probability": 0.0478,
+        "string_sector_correct_probability_se": 0.003017123133052412,
+        "wilson_expectation": -0.9044,
+        "wilson_expectation_se": 0.006034246266104824
+      },
+      "backend_name": "IQMBackend",
+      "calibration_set_id": "314aeb78-d1ec-418f-b1f2-9ab488ff820e",
+      "circuit_label": "gauge_preserving_string_joint",
+      "error_type": "gauge_preserving_string",
+      "expected": {
+        "P_Gauss": 1.0,
+        "wilson_expectation": -1.0
+      },
+      "mode": "iqm",
+      "quantum_computer": "emerald",
+      "raw_counts": {
+        "0000": 135,
+        "0001": 4560,
+        "0010": 34,
+        "0011": 82,
+        "0100": 18,
+        "0101": 39,
+        "0110": 33,
+        "0111": 19,
+        "1000": 10,
+        "1001": 43,
+        "1010": 1,
+        "1011": 7,
+        "1100": 5,
+        "1101": 11,
+        "1110": 3
+      },
+      "shots": 5000
+    }
+  ],
+  "shots": 5000,
+  "status": "completed",
+  "submitted": true
+}

@@ -1,0 +1,3 @@
+case,wilson_sector,P_Gauss,wilson_expectation,imbalance,imbalance_se,gauss_only_imbalance,gauss_plus_wilson_imbalance,gauss_only_acceptance,gauss_plus_wilson_acceptance
+Wplus,1,0.4991,0.596,0.150725,0.004216452741197274,0.1920456822280104,0.19492938952518626,0.4991,0.44965
+Wminus,-1,0.50015,-0.592,0.072225,0.004287021398214616,0.06458062581225632,0.1079393398751115,0.50015,0.05605

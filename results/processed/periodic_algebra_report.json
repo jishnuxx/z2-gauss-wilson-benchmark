@@ -1,0 +1,51 @@
+{
+  "claims_verified": {
+    "gauge_error_flips_at_least_one_gauss_check": true,
+    "hamiltonian_preserves_all_gauss_checks": true,
+    "hamiltonian_preserves_wilson_sector": true,
+    "string_error_flips_wilson_sector": true,
+    "string_error_preserves_all_gauss_checks": true
+  },
+  "errors": {
+    "gauge_preserving_string": {
+      "gauss_relations": {
+        "G0": "commutes",
+        "G1": "commutes",
+        "G2": "commutes",
+        "G3": "commutes"
+      },
+      "operator": "IIIZIIII",
+      "wilson_relation": "anticommutes"
+    },
+    "gauge_violating": {
+      "gauss_relations": {
+        "G0": "anticommutes",
+        "G1": "commutes",
+        "G2": "commutes",
+        "G3": "commutes"
+      },
+      "operator": "IIIIIIIX"
+    }
+  },
+  "hamiltonian_gauss_commutator_norms": {
+    "G0": 0.0,
+    "G1": 0.0,
+    "G2": 0.0,
+    "G3": 0.0
+  },
+  "hamiltonian_wilson_commutator_norm": 0.0,
+  "model": {
+    "electric_link_term": "omitted; coefficient fixed to zero",
+    "gauss_checks": [
+      "ZIIZIIIZ",
+      "IIZZIIZI",
+      "IZZIIZII",
+      "ZZIIZIII"
+    ],
+    "n_qubits": 8,
+    "name": "four_site_periodic_z2_matter_ring",
+    "qubit_order": "matter q0..q3, periodic links q4..q7",
+    "separate_scientific_observable": "time-dependent charge imbalance",
+    "wilson": "XXXXIIII"
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "audit_outcome": "candidate_ready_for_human_review",
+  "backend": {
+    "backend_name": "IQMBackend",
+    "backend_qubit_count": 53,
+    "calibration_set_id": "548516b7-6a1b-41b7-95cb-8e9992f0095c",
+    "native_operations": [
+      "id",
+      "delay",
+      "measure",
+      "r",
+      "if_else",
+      "reset",
+      "cz"
+    ],
+    "quantum_computer": "emerald",
+    "status": "connected_request_validated",
+    "use_metrics": true
+  },
+  "candidates": [
+    {
+      "algorithmic_checks": {
+        "minimum_separation_retained": true,
+        "minimum_state_fidelity": true,
+        "minimum_trotter_sector_separation": true
+      },
+      "algorithmic_gate_passed": true,
+      "candidate": "t=0.8,dt=0.4",
+      "dt": 0.4,
+      "exact_Wminus_imbalance": 0.021977967401874576,
+      "exact_Wplus_imbalance": 0.22782501531500213,
+      "exact_sector_separation": 0.20584704791312755,
+      "iqm_circuits": [
+        {
+          "cz_count": 110,
+          "depth": 150,
+          "logical_to_physical": [
+            11,
+            6,
+            5,
+            18,
+            4,
+            0,
+            3,
+            10,
+            20,
+            12,
+            1,
+            19
+          ],
+          "measurements": [
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.010800000000000032,
+              "physical_qubit": 0
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.008299999999999974,
+              "physical_qubit": 1
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.011499999999999955,
+              "physical_qubit": 4
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.011349999999999971,
+              "physical_qubit": 6
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.012149999999999994,
+              "physical_qubit": 9
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.007349999999999968,
+              "physical_qubit": 11
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.007600000000000051,
+              "physical_qubit": 18
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.03854999999999997,
+              "physical_qubit": 20
+            }
+          ],
+          "operations": {
+            "barrier": 2,
+            "cz": 110,
+            "measure": 8,
+            "r": 190
+          },
+          "sector": "Wplus",
+          "two_qubit_gate_count": 110,
+          "unique_cz_pairs": [
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0014900170052576378,
+              "physical_qubits": [
+                0,
+                1
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0019510991539397615,
+              "physical_qubits": [
+                0,
+                4
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.021537024025056972,
+              "physical_qubits": [
+                3,
+                4
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0031395410545107527,
+              "physical_qubits": [
+                3,
+                9
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0034012924352716523,
+              "physical_qubits": [
+                5,
+                1
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0028944265048264084,
+              "physical_qubits": [
+                5,
+                4
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.002453730774124363,
+              "physical_qubits": [
+                5,
+                6
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0032544990826399722,
+              "physical_qubits": [
+                5,
+                11
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0030224366734425967,
+              "physical_qubits": [
+                10,
+                4
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0018396697313868282,
+              "physical_qubits": [
+                10,
+                9
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.003083626792501959,
+              "physical_qubits": [
+                10,
+                11
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.006720324844403991,
+              "physical_qubits": [
+                10,
+                18
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.004951005705634004,
+              "physical_qubits": [
+                12,
+                6
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.033183909097178055,
+              "physical_qubits": [
+                12,
+                11
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.003244199651302959,
+              "physical_qubits": [
+                12,
+                20
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.012114410111324414,
+              "physical_qubits": [
+                19,
+                11
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.00795134217040916,
+              "physical_qubits": [
+                19,
+                18
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.005711570998714444,
+              "physical_qubits": [
+                19,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "cz_count": 110,
+          "depth": 150,
+          "logical_to_physical": [
+            11,
+            6,
+            5,
+            18,
+            4,
+            0,
+            3,
+            10,
+            20,
+            12,
+            1,
+            19
+          ],
+          "measurements": [
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.010800000000000032,
+              "physical_qubit": 0
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.008299999999999974,
+              "physical_qubit": 1
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.011499999999999955,
+              "physical_qubit": 4
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.011349999999999971,
+              "physical_qubit": 6
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.012149999999999994,
+              "physical_qubit": 9
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.007349999999999968,
+              "physical_qubit": 11
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.007600000000000051,
+              "physical_qubit": 18
+            },
+            {
+              "duration_seconds": 3.6e-07,
+              "error": 0.03854999999999997,
+              "physical_qubit": 20
+            }
+          ],
+          "operations": {
+            "barrier": 2,
+            "cz": 110,
+            "measure": 8,
+            "r": 190
+          },
+          "sector": "Wminus",
+          "two_qubit_gate_count": 110,
+          "unique_cz_pairs": [
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0014900170052576378,
+              "physical_qubits": [
+                0,
+                1
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0019510991539397615,
+              "physical_qubits": [
+                0,
+                4
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.021537024025056972,
+              "physical_qubits": [
+                3,
+                4
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0031395410545107527,
+              "physical_qubits": [
+                3,
+                9
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0034012924352716523,
+              "physical_qubits": [
+                5,
+                1
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0028944265048264084,
+              "physical_qubits": [
+                5,
+                4
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.002453730774124363,
+              "physical_qubits": [
+                5,
+                6
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0032544990826399722,
+              "physical_qubits": [
+                5,
+                11
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0030224366734425967,
+              "physical_qubits": [
+                10,
+                4
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.0018396697313868282,
+              "physical_qubits": [
+                10,
+                9
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.003083626792501959,
+              "physical_qubits": [
+                10,
+                11
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.006720324844403991,
+              "physical_qubits": [
+                10,
+                18
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.004951005705634004,
+              "physical_qubits": [
+                12,
+                6
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.033183909097178055,
+              "physical_qubits": [
+                12,
+                11
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.003244199651302959,
+              "physical_qubits": [
+                12,
+                20
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.012114410111324414,
+              "physical_qubits": [
+                19,
+                11
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.00795134217040916,
+              "physical_qubits": [
+                19,
+                18
+              ]
+            },
+            {
+              "duration_seconds": 4.8000000000000006e-08,
+              "error": 0.005711570998714444,
+              "physical_qubits": [
+                19,
+                20
+              ]
+            }
+          ]
+        }
+      ],
+      "maximum_absolute_trotter_observable_error": 0.038420076197474645,
+      "maximum_cz_error": 0.033183909097178055,
+      "maximum_readout_error": 0.03854999999999997,
+      "minimum_gauss_expectation": 0.9999999999999899,
+      "minimum_state_fidelity": 0.9120835591783525,
+      "native_max_cz_count": 110,
+      "native_max_depth": 150,
+      "recommended": true,
+      "request_validated": true,
+      "separation_retained": 0.7232012895212099,
+      "source_max_depth": 138,
+      "source_max_two_qubit_gate_count": 80,
+      "source_measurement_count": 8,
+      "source_qubit_count": 12,
+      "source_resources": {
+        "Wminus": {
+          "depth": 138,
+          "measurement_count": 8,
+          "qubit_count": 12,
+          "two_qubit_gate_count": 80
+        },
+        "Wplus": {
+          "depth": 138,
+          "measurement_count": 8,
+          "qubit_count": 12,
+          "two_qubit_gate_count": 80
+        }
+      },
+      "time": 0.8,
+      "trotter_Wminus_imbalance": 0.04053608862261937,
+      "trotter_Wminus_wilson": -0.9999999999999899,
+      "trotter_Wplus_imbalance": 0.18940493911752748,
+      "trotter_Wplus_wilson": 0.9999999999999899,
+      "trotter_sector_separation": 0.1488688504949081,
+      "trotter_steps": 2
+    }
+  ],
+  "configuration": {
+    "algorithmic_thresholds": {
+      "minimum_separation_retained": 0.6,
+      "minimum_state_fidelity": 0.85,
+      "minimum_trotter_sector_separation": 0.1
+    },
+    "optimization_level": 3,
+    "seed_transpiler": 19,
+    "selection_rule": "among threshold-passing candidates, minimize native CZ count and native depth, then maximize Trotter sector separation",
+    "shots_for_request_validation": 1000
+  },
+  "generated_at_utc": "2026-07-11T12:20:20.231768+00:00",
+  "hardware_go_no_go": "human_review_required",
+  "purpose": "No-credit feasibility audit for periodic observable-aware certification",
+  "recommended_candidate": "t=0.8,dt=0.4",
+  "request_type": "PostJobsRequest",
+  "safety": {
+    "backend_run_called": false,
+    "hardware_credits_consumed": false,
+    "job_submitted": false,
+    "request_validation_only": true
+  },
+  "schema_version": 1
+}
