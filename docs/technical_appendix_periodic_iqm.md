@@ -102,7 +102,9 @@ Measured Wilson contrast is \(0.694\). The raw hardware imbalance separation is 
 
 ## E. 5000-shot repeat and calibration check
 
-After the first 1000-shot periodic job, a 5000-shot repeat was attempted under a later Emerald calibration. The first freeze attempt with the previous seed was rejected by the hardware gate because it mapped Gauss ancilla \(q_9\) to physical qubit QB3 with readout error 0.0598. This failed before `backend.run`, so no credits were consumed by that rejected candidate.
+Under the later Emerald calibration, the initial mapping placed Gauss ancilla
+\(q_9\) on physical qubit QB3, whose recorded readout error was 0.0598, so that
+mapping was rejected during pre-execution calibration screening.
 
 We then scanned transpiler seeds using IQM request validation only. The accepted repeat used seed 1:
 

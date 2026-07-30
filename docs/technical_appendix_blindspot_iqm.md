@@ -130,4 +130,7 @@ The target and the gauge-preserving string error have the same local Gauss accep
 
 ## E. Scope
 
-This appendix supports the static four-qubit IQM result only. The periodic dynamics and \(O_{L,R}\) observable results are exact/simulator evidence, not yet IQM hardware dynamics.
+This appendix supports the static four-qubit IQM result. The full periodic
+trajectory and mitigation curve are exact/simulator evidence; IQM Emerald
+hardware additionally provides the single-time \(t=0.8\) periodic joint-readout
+result.
