@@ -1,0 +1,10 @@
+candidate,time,dt,trotter_steps,exact_sector_separation,trotter_sector_separation,separation_retained,minimum_state_fidelity,maximum_absolute_trotter_observable_error,source_qubit_count,source_max_depth,source_max_two_qubit_gate_count,native_max_depth,native_max_cz_count,maximum_cz_error,maximum_readout_error,request_validated,fidelity_gate_passed,retained_separation_gate_passed,absolute_separation_gate_passed,algorithmic_gate_passed,recommended
+"t=0.2,dt=0.2",0.2,0.2,1,0.001048316345064526,0.0,0.0,0.9976678334238821,0.0012489031650763094,12,80,48,,,,,False,True,False,False,False,False
+"t=0.3,dt=0.3",0.3,0.3,1,0.005192931997999084,0.0,0.0,0.9886246940496982,0.00582496272044275,12,80,48,,,,,False,True,False,False,False,False
+"t=0.4,dt=0.4",0.4,0.4,1,0.015918389936795063,0.0,0.0,0.9659512581054461,0.01640936391422687,12,80,48,,,,,False,True,False,False,False,False
+"t=0.5,dt=0.5",0.5,0.5,1,0.03735943638040695,0.0,0.0,0.9227480350922974,0.034548978193692514,12,80,48,,,,,False,True,False,False,False,False
+"t=0.6,dt=0.6",0.6,0.6,1,0.07379967779811547,0.0,0.0,0.854169194028225,0.059811910890884,12,80,48,,,,,False,True,False,False,False,False
+"t=0.7,dt=0.7",0.7,0.7,1,0.1290510017790405,0.0,0.0,0.7594316312050046,0.08973050260945531,12,80,48,,,,,False,False,False,False,False,False
+"t=0.8,dt=0.8",0.8,0.8,1,0.20584704791312755,0.0,0.0,0.6430335244154536,0.12075187523156108,12,80,48,,,,,False,False,False,False,False,False
+"t=0.9,dt=0.9",0.9,0.9,1,0.30531751927326045,1.1102230246251565e-16,3.6362899425745113e-16,0.5147254871209512,0.15539433637261413,12,80,48,,,,,False,False,False,False,False,False
+"t=1,dt=1",1.0,1.0,1,0.42660333423603647,0.0,0.0,0.38806199370091526,0.2499029365508143,12,80,48,,,,,False,False,False,False,False,False

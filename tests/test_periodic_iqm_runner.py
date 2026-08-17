@@ -6,7 +6,7 @@ import pytest
 from z2lgt.iqm_candidate import candidate_id, sha256_file
 from z2lgt.periodic_iqm_runner import (
     require_explicit_periodic_hardware_consent,
-    validate_periodic_hardware_manifest,
+    validate_periodic_submission_manifest,
 )
 
 
@@ -54,7 +54,7 @@ def periodic_manifest(tmp_path: Path) -> dict:
         "request_validated": True,
         "circuits_frozen": True,
         "human_review_approved": True,
-        "hardware_execution_started": False,
+        "submission_started": False,
         "hardware_submitted": False,
         "circuits": circuits,
     }
@@ -62,7 +62,7 @@ def periodic_manifest(tmp_path: Path) -> dict:
 
 def test_periodic_manifest_accepts_only_reviewed_two_sector_candidate(tmp_path):
     manifest = periodic_manifest(tmp_path)
-    paths = validate_periodic_hardware_manifest(
+    paths = validate_periodic_submission_manifest(
         manifest,
         root=tmp_path,
         expected_quantum_computer="emerald",
@@ -86,7 +86,7 @@ def test_periodic_manifest_rejects_changed_physics_point(
     manifest = periodic_manifest(tmp_path)
     manifest[field] = value
     with pytest.raises(PermissionError, match=message):
-        validate_periodic_hardware_manifest(
+        validate_periodic_submission_manifest(
             manifest,
             root=tmp_path,
             expected_quantum_computer="emerald",
@@ -98,7 +98,7 @@ def test_periodic_manifest_rejects_failed_hardware_freeze_check(tmp_path):
     manifest = periodic_manifest(tmp_path)
     manifest["hardware_checks"]["maximum_native_cz_count"] = False
     with pytest.raises(PermissionError, match="freeze checks"):
-        validate_periodic_hardware_manifest(
+        validate_periodic_submission_manifest(
             manifest,
             root=tmp_path,
             expected_quantum_computer="emerald",
@@ -142,3 +142,4 @@ def test_dry_run_needs_no_hardware_consent(tmp_path):
 
 def test_periodic_manifest_fixture_is_json_serializable(tmp_path):
     json.dumps(periodic_manifest(tmp_path))
+

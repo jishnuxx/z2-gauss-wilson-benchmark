@@ -1,0 +1,271 @@
+{
+  "calibration_set_id": "28aa3be3-b5c3-4cce-bb34-2c6efde23e0e",
+  "candidate_id": "73e6108224698aa04bc2845b559d373c73d5778fd0e45d0fdac94f4cf8318747",
+  "ideal_reference": {
+    "exact_Wminus_imbalance": 0.021977967401874576,
+    "exact_Wplus_imbalance": 0.22782501531500213,
+    "exact_sector_separation": 0.20584704791312755,
+    "minimum_state_fidelity": 0.9120835591783525,
+    "trotter_Wminus_imbalance": 0.04053608862261937,
+    "trotter_Wplus_imbalance": 0.18940493911752748,
+    "trotter_sector_separation": 0.1488688504949081
+  },
+  "job_id": "019ff54d-9530-76b3-827f-4b9a89999c07",
+  "limitations": [
+    "readout mitigation uses one scalar readout error per measured physical qubit as a symmetric assignment channel",
+    "mitigated standard errors are approximate because the inverted distribution is represented as weighted counts",
+    "matter-only readout cannot perform shot-level Gauss or Wilson postselection",
+    "readout mitigation does not correct algorithmic gate errors, decoherence, leakage, or crosstalk"
+  ],
+  "method": "readout_mitigated_manifest_symmetric",
+  "quantum_computer": "emerald",
+  "readout_mode": "matter_only",
+  "records": [
+    {
+      "case": "Wplus",
+      "dataset": "periodic_matter_readout",
+      "mitigated_analysis": {
+        "imbalance": 0.12216450948449396,
+        "imbalance_se": 0.008485185955911224,
+        "shots": 5000
+      },
+      "mitigated_counts": {
+        "0000": 59.94736535585385,
+        "0001": 182.16894737142258,
+        "0010": 157.70094084700077,
+        "0011": 990.290569356972,
+        "0100": 111.2277176357435,
+        "0101": 406.13414200671036,
+        "0110": 113.57087508019464,
+        "0111": 176.1145356468058,
+        "1000": 149.8541919013697,
+        "1001": 628.5964940423086,
+        "1010": 528.6851867242135,
+        "1011": 423.34724602237014,
+        "1100": 449.7798785594766,
+        "1101": 382.6184842799866,
+        "1110": 155.00756282055121,
+        "1111": 84.9558623490193
+      },
+      "mitigation": {
+        "assumption": "manifest scalar readout error used as symmetric P(0<->1)",
+        "calibration_set_id": "28aa3be3-b5c3-4cce-bb34-2c6efde23e0e",
+        "case": "Wplus",
+        "condition_number": 1.071674224296413,
+        "max_readout_error": 0.010950000000000015,
+        "mean_readout_error": 0.008575,
+        "negative_probability_mass": 0.0,
+        "physical_qubits_by_classical_bit": [
+          11,
+          10,
+          4,
+          5
+        ],
+        "qpy": "results/iqm/emerald_periodic_matter_candidate_5000/circuits/periodic_matter_Wplus.qpy",
+        "quantum_computer": "emerald",
+        "readout_error_probabilities": [
+          0.007249999999999979,
+          0.006449999999999956,
+          0.010950000000000015,
+          0.009650000000000047
+        ],
+        "response_model": "independent_bit_assignment",
+        "solver": "solve",
+        "source": "results/iqm/emerald_periodic_matter_candidate_5000/readiness_manifest.json"
+      },
+      "raw_analysis": {
+        "imbalance": 0.1201,
+        "imbalance_se": 0.00844068705734314,
+        "shots": 5000
+      },
+      "raw_counts": {
+        "0000": 63,
+        "0001": 193,
+        "0010": 166,
+        "0011": 965,
+        "0100": 116,
+        "0101": 400,
+        "0110": 115,
+        "0111": 185,
+        "1000": 158,
+        "1001": 617,
+        "1010": 518,
+        "1011": 427,
+        "1100": 441,
+        "1101": 384,
+        "1110": 160,
+        "1111": 92
+      },
+      "wilson_sector": 1
+    },
+    {
+      "case": "Wminus",
+      "dataset": "periodic_matter_readout",
+      "mitigated_analysis": {
+        "imbalance": 0.07427107397222302,
+        "imbalance_se": 0.008540988243865604,
+        "shots": 5000
+      },
+      "mitigated_counts": {
+        "0000": 66.8008094390056,
+        "0001": 182.67479371448013,
+        "0010": 211.42548989558813,
+        "0011": 846.1523437718055,
+        "0100": 117.21312676432565,
+        "0101": 456.34846880985214,
+        "0110": 69.270327032509,
+        "0111": 226.8761374624106,
+        "1000": 147.17455198310094,
+        "1001": 291.4409087812879,
+        "1010": 799.1038664353953,
+        "1011": 351.91469124975896,
+        "1100": 562.593159605857,
+        "1101": 399.18645726720047,
+        "1110": 133.72460491727773,
+        "1111": 138.10026287014443
+      },
+      "mitigation": {
+        "assumption": "manifest scalar readout error used as symmetric P(0<->1)",
+        "calibration_set_id": "28aa3be3-b5c3-4cce-bb34-2c6efde23e0e",
+        "case": "Wminus",
+        "condition_number": 1.071674224296413,
+        "max_readout_error": 0.010950000000000015,
+        "mean_readout_error": 0.008575,
+        "negative_probability_mass": 0.0,
+        "physical_qubits_by_classical_bit": [
+          11,
+          10,
+          4,
+          5
+        ],
+        "qpy": "results/iqm/emerald_periodic_matter_candidate_5000/circuits/periodic_matter_Wminus.qpy",
+        "quantum_computer": "emerald",
+        "readout_error_probabilities": [
+          0.007249999999999979,
+          0.006449999999999956,
+          0.010950000000000015,
+          0.009650000000000047
+        ],
+        "response_model": "independent_bit_assignment",
+        "solver": "solve",
+        "source": "results/iqm/emerald_periodic_matter_candidate_5000/readiness_manifest.json"
+      },
+      "raw_analysis": {
+        "imbalance": 0.0731,
+        "imbalance_se": 0.008494779455642153,
+        "shots": 5000
+      },
+      "raw_counts": {
+        "0000": 70,
+        "0001": 190,
+        "0010": 219,
+        "0011": 826,
+        "0100": 123,
+        "0101": 449,
+        "0110": 73,
+        "0111": 233,
+        "1000": 156,
+        "1001": 291,
+        "1010": 779,
+        "1011": 357,
+        "1100": 550,
+        "1101": 398,
+        "1110": 143,
+        "1111": 143
+      },
+      "wilson_sector": -1
+    }
+  ],
+  "resources": {
+    "max_readout_error": 0.010950000000000015,
+    "native_cz_count": 69,
+    "native_depth": 115
+  },
+  "schema_version": 1,
+  "scope": "offline readout-assignment mitigation of the reduced periodic matter-only IQM hardware result; no hardware submission",
+  "separations": {
+    "raw": {
+      "Wplus_minus_Wminus": 0.047,
+      "combined_standard_error": 0.011975244298134381,
+      "fraction_of_exact_separation": 0.22832486779132796,
+      "fraction_of_trotter_separation": 0.31571413256534536,
+      "z_score": 3.9247633559611064
+    },
+    "readout_mitigated_manifest_symmetric": {
+      "Wplus_minus_Wminus": 0.047893435512270946,
+      "combined_standard_error": 0.012039387895081856,
+      "fraction_of_exact_separation": 0.23266515598748416,
+      "fraction_of_trotter_separation": 0.32171562656023256,
+      "z_score": 3.97806233420186
+    }
+  },
+  "shots_per_circuit": 5000,
+  "source_manifest": "results/iqm/emerald_periodic_matter_candidate_5000/readiness_manifest.json",
+  "source_result": "results/iqm/periodic_matter_hardware/periodic_matter_readout_5000.json",
+  "table": [
+    {
+      "case": "Wplus",
+      "condition_number": "",
+      "dataset": "periodic_matter_readout",
+      "ideal_exact_imbalance": 0.22782501531500213,
+      "ideal_trotter_imbalance": 0.18940493911752748,
+      "imbalance": 0.1201,
+      "imbalance_se": 0.00844068705734314,
+      "max_readout_error": "",
+      "mean_readout_error": "",
+      "method": "raw",
+      "negative_probability_mass": "",
+      "physical_qubits_by_classical_bit": "",
+      "shots": 5000,
+      "wilson_sector": 1
+    },
+    {
+      "case": "Wplus",
+      "condition_number": 1.071674224296413,
+      "dataset": "periodic_matter_readout",
+      "ideal_exact_imbalance": 0.22782501531500213,
+      "ideal_trotter_imbalance": 0.18940493911752748,
+      "imbalance": 0.12216450948449396,
+      "imbalance_se": 0.008485185955911224,
+      "max_readout_error": 0.010950000000000015,
+      "mean_readout_error": 0.008575,
+      "method": "readout_mitigated_manifest_symmetric",
+      "negative_probability_mass": 0.0,
+      "physical_qubits_by_classical_bit": "11 10 4 5",
+      "shots": 5000,
+      "wilson_sector": 1
+    },
+    {
+      "case": "Wminus",
+      "condition_number": "",
+      "dataset": "periodic_matter_readout",
+      "ideal_exact_imbalance": 0.021977967401874576,
+      "ideal_trotter_imbalance": 0.04053608862261937,
+      "imbalance": 0.0731,
+      "imbalance_se": 0.008494779455642153,
+      "max_readout_error": "",
+      "mean_readout_error": "",
+      "method": "raw",
+      "negative_probability_mass": "",
+      "physical_qubits_by_classical_bit": "",
+      "shots": 5000,
+      "wilson_sector": -1
+    },
+    {
+      "case": "Wminus",
+      "condition_number": 1.071674224296413,
+      "dataset": "periodic_matter_readout",
+      "ideal_exact_imbalance": 0.021977967401874576,
+      "ideal_trotter_imbalance": 0.04053608862261937,
+      "imbalance": 0.07427107397222302,
+      "imbalance_se": 0.008540988243865604,
+      "max_readout_error": 0.010950000000000015,
+      "mean_readout_error": 0.008575,
+      "method": "readout_mitigated_manifest_symmetric",
+      "negative_probability_mass": 0.0,
+      "physical_qubits_by_classical_bit": "11 10 4 5",
+      "shots": 5000,
+      "wilson_sector": -1
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-"""Round-2 plotting helpers using only persisted analysis records."""
+"""Open-chain plotting helpers using only persisted analysis records."""
 
 from __future__ import annotations
 

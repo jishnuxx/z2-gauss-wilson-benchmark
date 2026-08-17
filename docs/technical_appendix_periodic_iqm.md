@@ -98,9 +98,12 @@ Uncertainties shown for \(P_{\rm Gauss}\) and \(O_{LR}\) are shot-noise standard
 | `Wplus` | \(+1\) | 0.360 ± 0.015 | +0.334 | +0.1600 ± 0.0187 | +0.1944 | +0.1950 | 0.282 |
 | `Wminus` | \(-1\) | 0.321 ± 0.015 | -0.360 | +0.1045 ± 0.0187 | +0.0997 | +0.2923 | 0.065 |
 
-Measured Wilson contrast is \(0.694\). The raw hardware imbalance separation is \(0.0555\), smaller than the ideal Trotter separation \(0.1489\). Therefore this run is useful as an Emerald execution record showing opposite measured Wilson signs in the two sectors, but it should not be described as the strongest quantitative mitigation evidence.
+Measured Wilson contrast is \(0.694\). The raw hardware imbalance separation is
+\(0.0555\), smaller than the ideal Trotter separation \(0.1489\). This first
+Emerald execution records opposite measured Wilson signs in the two sectors;
+the quantitative mitigation curve remains simulator-backed.
 
-## E. 5000-shot repeat and calibration check
+## E. 5000-shot repeat and calibration screening
 
 Under the later Emerald calibration, the initial mapping placed Gauss ancilla
 \(q_9\) on physical qubit QB3, whose recorded readout error was 0.0598, so that

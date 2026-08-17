@@ -1,4 +1,4 @@
-"""Opt-in IQM readiness checks with a mandatory no-hardware default."""
+"""Opt-in IQM readiness checks with a mandatory no-submit default."""
 
 from __future__ import annotations
 
@@ -26,12 +26,12 @@ def iqm_status() -> dict[str, Any]:
     return {
         "qiskit_on_iqm_available": package_available,
         "credential_available": credential_available,
-        "hardware_execution_enabled": False,
+        "submission_enabled": False,
     }
 
 
 def dry_run(circuit: QuantumCircuit) -> dict[str, Any]:
-    """Report generic compiled resources; never connects to hardware."""
+    """Report generic compiled resources; never connects or submits."""
     return {**resource_metrics(circuit), **iqm_status(), "mode": "dry-run"}
 
 

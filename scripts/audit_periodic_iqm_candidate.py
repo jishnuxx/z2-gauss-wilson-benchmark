@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit periodic joint-readout candidates against IQM without hardware execution."""
+"""Audit periodic joint-readout candidates against IQM without submission."""
 
 from __future__ import annotations
 

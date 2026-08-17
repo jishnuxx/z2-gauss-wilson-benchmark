@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Create a clean public reproducibility bundle.
+"""Create a clean reproducibility bundle for the Z2 Gauss/Wilson benchmark.
 
-The bundle is intentionally data-inclusive for reproducibility, but excludes
-local environments, caches, macOS metadata, temporary working folders, and old
-rendered preview directories.
+The bundle includes the public source, tests, archived evidence, and figures
+needed for reproduction. Planning notes, obsolete workflows, local environments,
+caches, and temporary working folders are excluded.
 """
 
 from __future__ import annotations
@@ -25,6 +25,7 @@ BUNDLE_DIR = DIST / BUNDLE_NAME
 ARCHIVE = DIST / f"{BUNDLE_NAME}.zip"
 
 TOP_LEVEL_FILES = [
+    ".gitattributes",
     ".gitignore",
     "ARTIFACT_MANIFEST.md",
     "LICENSE",
@@ -37,15 +38,37 @@ TOP_LEVEL_FILES = [
 
 FULL_DIRS = [
     "circuits",
-    "docs",
     "figures",
-    "results",
     "scripts",
     "src",
     "tests",
+    "results/ideal",
+    "results/noisy",
+    "results/processed",
+    "results/iqm/static_blindspot_5000",
+    "results/iqm/emerald_blindspot_candidate_5000",
+    "results/iqm/periodic_hardware",
+    "results/iqm/emerald_periodic_candidate_5000_seed1",
+    "results/iqm/periodic_matter_hardware",
+    "results/iqm/emerald_periodic_matter_candidate_5000",
+    "results/iqm/emerald_periodic_matter_hardware",
+    "results/iqm/emerald_periodic_matter_scan_candidate_5000",
+    "results/iqm/emerald_periodic_matter_scan_repeat2_5000",
+    "results/iqm/sirius_periodic_matter_hardware",
+    "results/iqm/sirius_periodic_matter_scan_candidate_5000",
+    "results/iqm/sirius_periodic_matter_scan_repeat2_5000",
 ]
 
-SELECTED_FILES: list[str] = []
+SELECTED_FILES = [
+    "docs/blindspot_model.md",
+    "docs/circuit_and_encoding_reference.md",
+    "docs/hardware_device_comparison.md",
+    "docs/iqm_emerald_hardware_result.md",
+    "docs/iqm_readout_and_response_mitigation.md",
+    "docs/model_convention.md",
+    "docs/technical_appendix_blindspot_iqm.md",
+    "docs/technical_appendix_periodic_iqm.md",
+]
 
 EXCLUDE_PATTERNS = [
     ".DS_Store",
@@ -57,6 +80,7 @@ EXCLUDE_PATTERNS = [
     "tmp",
     "dist",
     "*.egg-info",
+    "freeze_hardware_candidate.py",
 ]
 
 

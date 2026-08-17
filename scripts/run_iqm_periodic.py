@@ -17,7 +17,7 @@ from qiskit.qpy import load as qpy_load
 from z2lgt.iqm_candidate import load_manifest
 from z2lgt.periodic_iqm_runner import (
     require_explicit_periodic_hardware_consent,
-    validate_periodic_hardware_manifest,
+    validate_periodic_submission_manifest,
 )
 from z2lgt.periodic_readout import analyze_periodic_joint_counts
 
@@ -114,7 +114,7 @@ def main() -> None:
         default=Path("results/processed/periodic_iqm_joint_readout.csv"),
     )
     parser.add_argument(
-        "--submit", action="store_true", help="execute the approved frozen hardware run"
+        "--submit", action="store_true", help="submit the approved frozen candidate"
     )
     parser.add_argument(
         "--confirm-candidate",
@@ -124,7 +124,7 @@ def main() -> None:
 
     manifest_path = args.manifest.resolve()
     manifest = load_manifest(manifest_path)
-    qpy_paths = validate_periodic_hardware_manifest(
+    qpy_paths = validate_periodic_submission_manifest(
         manifest,
         root=_bootstrap.ROOT,
         expected_quantum_computer=args.quantum_computer,
@@ -197,8 +197,8 @@ def main() -> None:
             use_metrics=True,
         )
         backend.create_run_request(circuits, shots=args.shots)
-        manifest["hardware_execution_started"] = True
-        manifest["hardware_execution_started_at_utc"] = datetime.now(
+        manifest["submission_started"] = True
+        manifest["submission_started_at_utc"] = datetime.now(
             timezone.utc
         ).isoformat()
         manifest_path.write_text(
@@ -288,7 +288,7 @@ def main() -> None:
         print(f"  JSON: {args.output_json}")
         print(f"  CSV: {args.output_csv}")
     except Exception as exc:
-        report["status"] = f"hardware execution blocked or failed: {exc}"
+        report["status"] = f"submission blocked or failed: {exc}"
         write_json(args.output_json, report)
         raise SystemExit(str(exc)) from exc
 

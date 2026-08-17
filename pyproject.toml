@@ -6,8 +6,6 @@ build-backend = "setuptools.build_meta"
 name = "z2-gauss-wilson-benchmark"
 version = "0.1.0"
 description = "String-aware Z2 Gauss-law diagnostic benchmark"
-readme = "README.md"
-license = {file = "LICENSE"}
 requires-python = ">=3.10"
 dependencies = [
   "numpy>=1.26",

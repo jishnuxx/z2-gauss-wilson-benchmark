@@ -300,7 +300,7 @@ def main() -> None:
         "request_validated": True,
         "circuits_frozen": True,
         "human_review_approved": False,
-        "hardware_execution_started": False,
+        "submission_started": False,
         "hardware_submitted": False,
         "hardware_credits_consumed": False,
         "backend_run_called": False,
@@ -308,7 +308,7 @@ def main() -> None:
         "review_note": (
             "Review calibration, mappings, errors, hashes, shots, and credit budget. "
             "Approval records review only; this repository currently provides no "
-            "periodic hardware execution entrypoint."
+            "periodic hardware-submission entrypoint."
         ),
     }
     outdir.mkdir(parents=True, exist_ok=True)

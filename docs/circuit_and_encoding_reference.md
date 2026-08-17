@@ -150,7 +150,7 @@ Resource summary:
 ```text
 Logical Qiskit joint-readout circuit: 12 qubits, depth 138, 80 two-qubit operations, 8 measurements
 Latest Emerald seed-1 periodic repeat: depth 125, 101 CZ, 8 measurements
-Earlier 1000-shot periodic readout run: depth 134, 100 CZ, 8 measurements
+Earlier 1000-shot periodic execution: depth 134, 100 CZ, 8 measurements
 ```
 
 ## 3. Simulation/hardware boundary

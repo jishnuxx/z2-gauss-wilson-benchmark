@@ -1,0 +1,348 @@
+{
+  "all_tests_passed": true,
+  "approved_at_utc": "2026-08-12T09:27:54.147326+00:00",
+  "approved_by": "jishnu",
+  "backend_name": "IQMBackend",
+  "backend_qubit_count": 54,
+  "backend_run_called": true,
+  "batch": "periodic-matter-two-sector-t0.8-dt0.4",
+  "calibration_set_id": "28aa3be3-b5c3-4cce-bb34-2c6efde23e0e",
+  "candidate_id": "73e6108224698aa04bc2845b559d373c73d5778fd0e45d0fdac94f4cf8318747",
+  "circuits": [
+    {
+      "case": "Wplus",
+      "cz_count": 69,
+      "cz_pairs": [
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0038767905121264157,
+          "physical_qubits": [
+            0,
+            4
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.005689430275855223,
+          "physical_qubits": [
+            5,
+            1
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.004510774684295393,
+          "physical_qubits": [
+            5,
+            4
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0022672668572022436,
+          "physical_qubits": [
+            5,
+            6
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0030559472030392554,
+          "physical_qubits": [
+            5,
+            11
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.003399910909777981,
+          "physical_qubits": [
+            10,
+            4
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0017387268525259625,
+          "physical_qubits": [
+            10,
+            9
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0030413884128890345,
+          "physical_qubits": [
+            10,
+            11
+          ]
+        }
+      ],
+      "depth": 115,
+      "logical_to_physical": [
+        11,
+        9,
+        10,
+        6,
+        4,
+        0,
+        5,
+        1
+      ],
+      "measurement_count": 4,
+      "measurements": [
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.010950000000000015,
+          "physical_qubit": 4
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.009650000000000047,
+          "physical_qubit": 5
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.006449999999999956,
+          "physical_qubit": 10
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.007249999999999979,
+          "physical_qubit": 11
+        }
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 69,
+        "measure": 4,
+        "r": 115
+      },
+      "qasm": "results/iqm/emerald_periodic_matter_candidate_5000/circuits/periodic_matter_Wplus.qasm",
+      "qasm_sha256": "a102648ddb6c607ddd35e1a2075187d65585106bbcacf8d49bda7c706317fda0",
+      "qpy": "results/iqm/emerald_periodic_matter_candidate_5000/circuits/periodic_matter_Wplus.qpy",
+      "qpy_sha256": "6f603f4e2ae8228b07d0ea0aa9b5662da6c557346260d3ff9fb66383e84b4ad3",
+      "two_qubit_gate_count": 69,
+      "wilson_sector": 1
+    },
+    {
+      "case": "Wminus",
+      "cz_count": 69,
+      "cz_pairs": [
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0038767905121264157,
+          "physical_qubits": [
+            0,
+            4
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.005689430275855223,
+          "physical_qubits": [
+            5,
+            1
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.004510774684295393,
+          "physical_qubits": [
+            5,
+            4
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0022672668572022436,
+          "physical_qubits": [
+            5,
+            6
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0030559472030392554,
+          "physical_qubits": [
+            5,
+            11
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.003399910909777981,
+          "physical_qubits": [
+            10,
+            4
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0017387268525259625,
+          "physical_qubits": [
+            10,
+            9
+          ]
+        },
+        {
+          "duration_seconds": 4.8000000000000006e-08,
+          "error": 0.0030413884128890345,
+          "physical_qubits": [
+            10,
+            11
+          ]
+        }
+      ],
+      "depth": 115,
+      "logical_to_physical": [
+        11,
+        9,
+        10,
+        6,
+        4,
+        0,
+        5,
+        1
+      ],
+      "measurement_count": 4,
+      "measurements": [
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.010950000000000015,
+          "physical_qubit": 4
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.009650000000000047,
+          "physical_qubit": 5
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.006449999999999956,
+          "physical_qubit": 10
+        },
+        {
+          "duration_seconds": 3.6e-07,
+          "error": 0.007249999999999979,
+          "physical_qubit": 11
+        }
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 69,
+        "measure": 4,
+        "r": 115
+      },
+      "qasm": "results/iqm/emerald_periodic_matter_candidate_5000/circuits/periodic_matter_Wminus.qasm",
+      "qasm_sha256": "9d1fd4636de55b4d1119e3e58019a17fd1efa6cab80b9c92d669665b1ee2264e",
+      "qpy": "results/iqm/emerald_periodic_matter_candidate_5000/circuits/periodic_matter_Wminus.qpy",
+      "qpy_sha256": "d0b34227150167754ed1fd8bc112a10a1011d0e53ec3202a3dbd7550fb92f54c",
+      "two_qubit_gate_count": 69,
+      "wilson_sector": -1
+    }
+  ],
+  "circuits_frozen": true,
+  "dt": 0.4,
+  "generated_at_utc": "2026-08-12T09:12:39.338946+00:00",
+  "hardware_checks": {
+    "matter_only_measurements": true,
+    "maximum_cz_error": true,
+    "maximum_native_cz_count": true,
+    "maximum_native_depth": true,
+    "maximum_readout_error": true,
+    "same_mapping_for_both_sectors": true
+  },
+  "hardware_credits_consumed": true,
+  "hardware_submitted": true,
+  "hardware_thresholds": {
+    "maximum_cz_error": 0.015,
+    "maximum_native_cz_count": 90,
+    "maximum_native_depth": 135,
+    "maximum_readout_error": 0.025
+  },
+  "human_review_approved": true,
+  "job_id": "019ff54d-9530-76b3-827f-4b9a89999c07",
+  "maximum_cz_error": 0.005689430275855223,
+  "maximum_native_cz_count": 69,
+  "maximum_native_depth": 115,
+  "maximum_readout_error": 0.010950000000000015,
+  "native_operations": [
+    "id",
+    "delay",
+    "measure",
+    "r",
+    "if_else",
+    "reset",
+    "cz"
+  ],
+  "optimization_level": 3,
+  "physics_metrics": {
+    "algorithmic_checks": {
+      "minimum_separation_retained": true,
+      "minimum_state_fidelity": true,
+      "minimum_trotter_sector_separation": true
+    },
+    "algorithmic_gate_passed": true,
+    "candidate": "t=0.8,dt=0.4",
+    "dt": 0.4,
+    "exact_Wminus_imbalance": 0.021977967401874576,
+    "exact_Wplus_imbalance": 0.22782501531500213,
+    "exact_sector_separation": 0.20584704791312755,
+    "maximum_absolute_trotter_observable_error": 0.038420076197474645,
+    "minimum_gauss_expectation": 0.9999999999999899,
+    "minimum_state_fidelity": 0.9120835591783525,
+    "separation_retained": 0.7232012895212099,
+    "source_max_depth": 138,
+    "source_max_two_qubit_gate_count": 80,
+    "source_measurement_count": 8,
+    "source_qubit_count": 12,
+    "source_resources": {
+      "Wminus": {
+        "depth": 138,
+        "measurement_count": 8,
+        "qubit_count": 12,
+        "two_qubit_gate_count": 80
+      },
+      "Wplus": {
+        "depth": 138,
+        "measurement_count": 8,
+        "qubit_count": 12,
+        "two_qubit_gate_count": 80
+      }
+    },
+    "time": 0.8,
+    "trotter_Wminus_imbalance": 0.04053608862261937,
+    "trotter_Wminus_wilson": -0.9999999999999899,
+    "trotter_Wplus_imbalance": 0.18940493911752748,
+    "trotter_Wplus_wilson": 0.9999999999999899,
+    "trotter_sector_separation": 0.1488688504949081,
+    "trotter_steps": 2
+  },
+  "qpy_sha256": [
+    "6f603f4e2ae8228b07d0ea0aa9b5662da6c557346260d3ff9fb66383e84b4ad3",
+    "d0b34227150167754ed1fd8bc112a10a1011d0e53ec3202a3dbd7550fb92f54c"
+  ],
+  "quantum_computer": "emerald",
+  "readout_mode": "matter_only",
+  "request_type": "PostJobsRequest",
+  "request_validated": true,
+  "result_completed": true,
+  "result_completed_at_utc": "2026-08-12T09:29:03.226897+00:00",
+  "review_note": "Reduced periodic hardware dynamics candidate.  It measures matter only for O_LR; use separate Gauss/Wilson diagnostics for sector certification.",
+  "schema_version": 1,
+  "seed_transpiler": 7,
+  "server_url": "https://resonance.meetiqm.com",
+  "shots": 5000,
+  "submission_started": true,
+  "submission_started_at_utc": "2026-08-12T09:28:49.932733+00:00",
+  "submitted_at_utc": "2026-08-12T09:28:50.255720+00:00",
+  "test_output": "........................................................................ [ 73%]\n..........................                                               [100%]\n98 passed in 33.95s",
+  "time": 0.8,
+  "trotter_steps": 2,
+  "use_metrics": true,
+  "wilson_sectors": {
+    "Wminus": -1,
+    "Wplus": 1
+  }
+}

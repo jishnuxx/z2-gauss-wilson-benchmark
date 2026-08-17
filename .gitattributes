@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+*.qpy binary
+*.csv -text
+*.png binary
+*.pdf binary
+*.pptx binary
+*.key binary
+*.zip binary

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate and export the two-sector periodic comparison circuits."""
+"""Validate and export the two-sector periodic benchmark circuits."""
 
 import argparse
 import csv

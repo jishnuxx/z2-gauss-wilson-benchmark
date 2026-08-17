@@ -1,0 +1,78 @@
+{
+  "calibration_set_id": "28aa3be3-b5c3-4cce-bb34-2c6efde23e0e",
+  "candidate_id": "73e6108224698aa04bc2845b559d373c73d5778fd0e45d0fdac94f4cf8318747",
+  "completed_at_utc": "2026-08-12T09:29:03.226897+00:00",
+  "dt": 0.4,
+  "job_id": "019ff54d-9530-76b3-827f-4b9a89999c07",
+  "measured_raw_imbalance_separation": 0.047,
+  "mode": "iqm-periodic-matter-readout",
+  "quantum_computer": "emerald",
+  "readout_mode": "matter_only",
+  "records": [
+    {
+      "analysis": {
+        "imbalance": 0.1201,
+        "imbalance_se": 0.00844068705734314,
+        "shots": 5000
+      },
+      "backend_name": "IQMBackend",
+      "case": "Wplus",
+      "circuit_name": "periodic_matter_Wplus",
+      "raw_counts": {
+        "0000": 63,
+        "0001": 193,
+        "0010": 166,
+        "0011": 965,
+        "0100": 116,
+        "0101": 400,
+        "0110": 115,
+        "0111": 185,
+        "1000": 158,
+        "1001": 617,
+        "1010": 518,
+        "1011": 427,
+        "1100": 441,
+        "1101": 384,
+        "1110": 160,
+        "1111": 92
+      },
+      "shots": 5000,
+      "wilson_sector": 1
+    },
+    {
+      "analysis": {
+        "imbalance": 0.0731,
+        "imbalance_se": 0.008494779455642153,
+        "shots": 5000
+      },
+      "backend_name": "IQMBackend",
+      "case": "Wminus",
+      "circuit_name": "periodic_matter_Wminus",
+      "raw_counts": {
+        "0000": 70,
+        "0001": 190,
+        "0010": 219,
+        "0011": 826,
+        "0100": 123,
+        "0101": 449,
+        "0110": 73,
+        "0111": 233,
+        "1000": 156,
+        "1001": 291,
+        "1010": 779,
+        "1011": 357,
+        "1100": 550,
+        "1101": 398,
+        "1110": 143,
+        "1111": 143
+      },
+      "shots": 5000,
+      "wilson_sector": -1
+    }
+  ],
+  "schema_version": 1,
+  "shots_per_circuit": 5000,
+  "status": "completed",
+  "submitted": true,
+  "time": 0.8
+}

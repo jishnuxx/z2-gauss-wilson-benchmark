@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from z2lgt.iqm_candidate import candidate_id, sha256_file, validate_hardware_manifest
+from z2lgt.iqm_candidate import candidate_id, sha256_file, validate_submission_manifest
 
 
 def approved_manifest(tmp_path: Path) -> dict:
@@ -27,7 +27,7 @@ def approved_manifest(tmp_path: Path) -> dict:
         "request_validated": True,
         "circuits_frozen": True,
         "human_review_approved": True,
-        "hardware_execution_started": False,
+        "submission_started": False,
         "hardware_submitted": False,
         "circuits": [{"qpy": str(qpy), "qpy_sha256": sha256_file(qpy)}],
     }
@@ -35,7 +35,7 @@ def approved_manifest(tmp_path: Path) -> dict:
 
 def test_approved_manifest_returns_verified_qpy(tmp_path):
     manifest = approved_manifest(tmp_path)
-    paths = validate_hardware_manifest(
+    paths = validate_submission_manifest(
         manifest,
         root=tmp_path,
         expected_quantum_computer="emerald",
@@ -52,31 +52,31 @@ def test_manifest_requires_every_readiness_gate(tmp_path, gate):
     manifest = approved_manifest(tmp_path)
     manifest[gate] = False
     with pytest.raises(PermissionError, match=gate):
-        validate_hardware_manifest(manifest, root=tmp_path)
+        validate_submission_manifest(manifest, root=tmp_path)
 
 
 def test_manifest_rejects_modified_frozen_circuit(tmp_path):
     manifest = approved_manifest(tmp_path)
     Path(manifest["circuits"][0]["qpy"]).write_bytes(b"modified")
     with pytest.raises(PermissionError, match="hash mismatch"):
-        validate_hardware_manifest(manifest, root=tmp_path)
+        validate_submission_manifest(manifest, root=tmp_path)
 
 
-def test_manifest_rejects_prior_hardware_attempt(tmp_path):
+def test_manifest_rejects_prior_submission_attempt(tmp_path):
     manifest = approved_manifest(tmp_path)
-    manifest["hardware_execution_started"] = True
-    with pytest.raises(PermissionError, match="prior hardware execution attempt"):
-        validate_hardware_manifest(manifest, root=tmp_path)
+    manifest["submission_started"] = True
+    with pytest.raises(PermissionError, match="prior submission attempt"):
+        validate_submission_manifest(manifest, root=tmp_path)
 
 
 def test_manifest_rejects_target_or_shot_change(tmp_path):
     manifest = approved_manifest(tmp_path)
     with pytest.raises(PermissionError, match="quantum computer"):
-        validate_hardware_manifest(
+        validate_submission_manifest(
             manifest, root=tmp_path, expected_quantum_computer="garnet", expected_shots=1000
         )
     with pytest.raises(PermissionError, match="shots"):
-        validate_hardware_manifest(
+        validate_submission_manifest(
             manifest, root=tmp_path, expected_quantum_computer="emerald", expected_shots=2000
         )
 
@@ -85,7 +85,7 @@ def test_manifest_rejects_identity_tampering(tmp_path):
     manifest = approved_manifest(tmp_path)
     manifest["calibration_set_id"] = "00000000-0000-0000-0000-000000000002"
     with pytest.raises(PermissionError, match="identity hash"):
-        validate_hardware_manifest(manifest, root=tmp_path)
+        validate_submission_manifest(manifest, root=tmp_path)
 
 
 def test_manifest_is_json_serializable(tmp_path):

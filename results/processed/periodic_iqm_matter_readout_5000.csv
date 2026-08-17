@@ -1,0 +1,3 @@
+case,wilson_sector,shots,readout_mode,imbalance,imbalance_se
+Wplus,1,5000,matter_only,0.1201,0.00844068705734314
+Wminus,-1,5000,matter_only,0.0731,0.008494779455642153

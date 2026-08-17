@@ -7,6 +7,7 @@ fi
 
 export IQM_SERVER_URL="https://resonance.meetiqm.com"
 export IQM_QUANTUM_COMPUTER="emerald"
+unset IQM_TOKENS_FILE
 export IQM_TOKEN="$(security find-generic-password -a "$USER" -s "IQM_TOKEN" -w)" || return 1
 
 if [[ -z "$IQM_TOKEN" ]]; then

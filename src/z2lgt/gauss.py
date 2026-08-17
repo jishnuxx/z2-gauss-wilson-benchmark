@@ -34,7 +34,7 @@ def physical_bits_from_matter(model: Z2Model, matter_bits: list[int]) -> list[in
         link_bits.append(0 if running_z == 1 else 1)
     bits = list(matter_bits) + link_bits
     if not is_physical(bits, model):
-        raise RuntimeError("Gauss-law state construction failure")
+        raise RuntimeError("internal Gauss-law state construction failure")
     return bits
 
 
@@ -89,3 +89,4 @@ def commutator_norms(model: Z2Model) -> list[float]:
         float(np.linalg.norm(hamiltonian @ term.matrix() - term.matrix() @ hamiltonian))
         for term in gauss_terms(model)
     ]
+

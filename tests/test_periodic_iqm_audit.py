@@ -76,7 +76,7 @@ def test_recommendation_uses_explicit_gate_then_shallower_candidate():
     assert recommended_candidate([shallow, accurate]) == "t=0.8,dt=0.4"
 
 
-def test_audit_outputs_preserve_no_hardware_execution_status(tmp_path):
+def test_audit_outputs_preserve_no_submission_status(tmp_path):
     row = algorithmic_candidate_metrics(0.8, 0.4)
     apply_algorithmic_gate(
         row,

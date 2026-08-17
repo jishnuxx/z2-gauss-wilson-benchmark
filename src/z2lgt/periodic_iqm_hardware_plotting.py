@@ -1,4 +1,4 @@
-"""Hardware-only plots for the periodic IQM readout run."""
+"""Hardware-only plots for the periodic IQM readout."""
 
 from __future__ import annotations
 
@@ -170,11 +170,7 @@ def plot_periodic_iqm_hardware_readout(
         fontsize=16,
         y=1.02,
     )
-    footer = (
-        f"Job {job_id}; {shots_label}."
-        if job_id
-        else f"IQM Emerald hardware; {shots_label}."
-    )
+    footer = f"IQM Emerald hardware readout; {shots_label}."
     fig.text(
         0.5,
         -0.02,

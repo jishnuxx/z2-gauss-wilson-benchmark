@@ -13,17 +13,26 @@ invisible to every local syndrome while flipping a nonlocal physical label.
 
 ## Current reproducibility status
 
-The repository contains a reproducible benchmark package:
+The repository contains a reproducible evidence package for the current
+\(\mathbb{Z}_2\) Gauss/Wilson benchmark:
 
 - a 5000-shot IQM Emerald static hardware result demonstrating the Gauss-only
   blind spot;
+- an offline IQM readout-assignment mitigation pass using archived calibration
+  metadata, plus an optional 19-circuit static response-matrix hardware
+  workflow for a stronger rerun;
 - ideal and noisy Qiskit/Aer reproductions of the same benchmark;
 - exact periodic \(\mathbb{Z}_2\) dynamics showing why the missed Wilson sector
   can corrupt a separate matter observable;
+- an offline periodic depth-reduction audit showing that one-step dynamics
+  has zero target \(O_{\rm LR}\) separation and that the practical reduced
+  rerun is a split-readout, two-step matter-only dynamics circuit;
 - a periodic Emerald readout check showing the Wilson diagnostic can
   be compiled and measured in a deeper circuit;
 - tests, frozen QASM/QPY circuit artifacts, processed CSV/JSON outputs, figures,
   and technical documentation.
+- a matched Emerald/Sirius three-point comparison with two archived 5000-shot
+  jobs per device and an offline reproduction target.
 
 Headline static Emerald result:
 
@@ -32,6 +41,14 @@ Headline static Emerald result:
 | Target circuit | 0.9432 | +0.9224 | Target local and Wilson sector accepted. |
 | Gauge-violating injected fault | 0.0314 | +0.9352 | Gauss checks reject the fault. |
 | Gauge-preserving string fault | 0.9390 | -0.9044 | Gauss-only accepts a wrong Wilson sector. |
+
+Readout-mitigated static Emerald result from archived calibration metadata:
+
+| Case | \(P_{\rm Gauss}\) | \(\langle W\rangle\) |
+|---|---:|---:|
+| Target circuit | 0.9648 | +0.9313 |
+| Gauge-violating injected fault | 0.0228 | +0.9444 |
+| Gauge-preserving string fault | 0.9607 | -0.9133 |
 
 The supported claim is observable-aware gauge certification, not full quantum
 error correction, a decoder, fault tolerance, or large-scale QCD simulation.
@@ -83,6 +100,10 @@ python scripts/run_noisy.py --shots 20000
 python scripts/analyze_results.py \
   --iqm results/iqm/static_blindspot_5000/blindspot_minimal.json
 python scripts/make_blindspot_plots.py
+python scripts/mitigate_iqm_readout.py
+python scripts/make_iqm_mitigation_plot.py
+python scripts/run_periodic_depth_reduction_audit.py
+python scripts/make_periodic_depth_reduction_plot.py
 ```
 
 The one-command local reproduction path is:
@@ -93,6 +114,20 @@ make PYTHON=/path/to/python reproduce-all
 
 This does not submit hardware jobs. It uses the archived IQM JSON/CSV outputs
 already in `results/`.
+
+To regenerate the final matched device comparison without IQM credentials or
+hardware submission:
+
+```bash
+make PYTHON=/path/to/python iqm-device-comparison
+```
+
+The presentation-ready interpretation and claim boundaries are in
+`docs/hardware_device_comparison.md`.
+
+This produces the machine-readable comparison in
+`results/processed/iqm_emerald_sirius_comparison.{json,csv}` and the final
+figure `figures/fig15_iqm_emerald_sirius_sector_separation.{png,pdf}`.
 
 The noisy simulator applies configurable one- and two-qubit depolarizing
 channels plus symmetric readout flips. Defaults are `0.001`, `0.01`, and
@@ -112,6 +147,10 @@ results/
   processed/blindspot_ideal.csv
   processed/blindspot_summary.json
   processed/diagnostic_table.csv
+  processed/iqm_readout_mitigation.csv
+  processed/iqm_readout_mitigation.json
+  processed/periodic_depth_reduction_audit.csv
+  processed/periodic_depth_reduction_audit.json
 figures/
 ```
 
@@ -144,7 +183,7 @@ is used.
 ## IQM Emerald hardware runs
 
 The minimal hardware batch is exactly three circuits. The runner defaults to a
-provider-free dry run and cannot execute circuits unless a target-specific,
+provider-free dry run and cannot submit circuits unless a target-specific,
 hash-verified manifest has been frozen and interactively approved.
 
 Store the API token in macOS Keychain once, then load the Emerald environment
@@ -192,14 +231,74 @@ python scripts/run_iqm.py --shots 5000 \
 ```
 
 Missing approval, modified circuit hashes, changed shots, changed target,
-missing credentials, or a reused manifest blocks execution. The
+missing credentials, or a reused submitted manifest blocks execution. The
 runner loads the frozen QPY files and pins the recorded calibration set rather
-than retranspiling at execution time. No credentials are written to results
+than retranspiling at submission time. No credentials are written to results
 or manifests.
 
 A 5000-shot Emerald run has been completed for the static blind-spot benchmark.
 The hardware result is recorded in `docs/iqm_emerald_hardware_result.md`.
 The compact technical appendix is `docs/technical_appendix_blindspot_iqm.md`.
+
+For a stronger static diagnostic, the repository also supports a
+response-matrix batch. It freezes the three data circuits plus all 16
+known \((W,G0,G1,G2)\) syndrome calibration circuits:
+
+```bash
+python scripts/freeze_iqm_blindspot_response_candidate.py --shots 5000
+python scripts/approve_iqm_candidate.py \
+  results/iqm/emerald_blindspot_response_candidate_5000/readiness_manifest.json
+```
+
+After review and token/credit confirmation, submit with:
+
+```bash
+export Z2LGT_ALLOW_IQM_HARDWARE=YES
+python scripts/run_iqm_blindspot_response.py \
+  --shots 5000 \
+  --manifest results/iqm/emerald_blindspot_response_candidate_5000/readiness_manifest.json \
+  --submit \
+  --confirm-candidate <first-12-candidate-chars>
+```
+
+This response-matrix path calibrates the four-bit diagnostic channel on
+hardware. It is stronger than scalar readout correction, but it is still not a
+fault-tolerant decoder.
+
+For the reduced periodic dynamics rerun selected by the depth audit:
+
+```bash
+python scripts/freeze_iqm_periodic_matter_candidate.py --shots 5000
+python scripts/approve_iqm_candidate.py \
+  results/iqm/emerald_periodic_matter_candidate_5000/readiness_manifest.json
+export Z2LGT_ALLOW_PERIODIC_IQM_HARDWARE=YES
+python scripts/run_iqm_periodic_matter.py \
+  --shots 5000 \
+  --manifest results/iqm/emerald_periodic_matter_candidate_5000/readiness_manifest.json \
+  --submit \
+  --confirm-candidate <first-12-candidate-chars>
+```
+
+This candidate measures only the matter imbalance in the dynamics circuit,
+reducing the hardware depth target. Gauss/Wilson certification should be paired
+from the static or response-matrix diagnostic layer.
+
+The completed 5000-shot reduced Emerald run is archived as job
+`019ff54d-9530-76b3-827f-4b9a89999c07`.  The frozen native circuits use 69 CZ
+gates at depth 115, compared with 101 CZ gates at depth 125 for the previous
+joint-readout periodic run.  The raw measured sector separation is
+\(\Delta O_{\rm LR}=0.0470\pm0.0120\); readout mitigation gives
+\(\Delta O_{\rm LR}=0.0479\pm0.0120\).  This is a resolved hardware separation,
+but still only about 32% of the ideal Trotter separation, so it should be
+described as a reduced-depth hardware feasibility result rather than a fully
+error-mitigated dynamics match.
+
+To reproduce the offline readout-mitigation analysis and hardware figure:
+
+```bash
+python scripts/mitigate_iqm_periodic_matter_readout.py
+python scripts/make_periodic_matter_hardware_plot.py
+```
 
 ## Reproducibility bundle
 
@@ -216,11 +315,11 @@ make PYTHON=/path/to/python bundle
 ```
 
 The bundle is written under `dist/` and excludes local environments, caches,
-temporary working directories, and macOS metadata. It includes the source code,
+temporary working directories, and macOS metadata. It includes source code,
 tests, figures, circuit artifacts, archived hardware JSON/CSV files, and
 reproducibility documentation.
 
-## Existing open-chain dynamics workflow
+## Existing open-chain workflow
 
 The earlier open-chain Hamiltonian/postselection benchmark remains intact in
 `src/z2lgt/model.py` and `scripts/run_all_minimal.py`. It is scientifically
@@ -237,7 +336,3 @@ The supported presentation statement is:
 > lattice-gauge simulation, but it is incomplete. On a minimal Z2 hardware
 > benchmark, gauge-preserving string-sector errors can pass all local checks
 > while corrupting a Wilson observable, motivating string-aware diagnostics.
-
-## License
-
-This project is released under the MIT License. See `LICENSE`.

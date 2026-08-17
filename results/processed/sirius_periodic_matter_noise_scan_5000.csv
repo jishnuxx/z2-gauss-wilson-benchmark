@@ -1,0 +1,7 @@
+time,dt,trotter_steps,case,wilson_sector,exact_O_LR,trotter_O_LR,noisy_O_LR,noisy_O_LR_se,shots,depth,r_count,cz_count,move_count,calibration_set_id,noise_model
+0.6,0.3,2,Wplus,1,0.45457684680307253,0.4377339233729705,0.2132,0.007668712538620809,5000,172,97,59,82,24f34c79-06cd-4c83-96a8-2e7b11b7c07b,calibration-informed independent depolarizing plus symmetric readout
+0.6,0.3,2,Wminus,-1,0.38077716900495706,0.3833633360607019,0.2085,0.007646930756846174,5000,172,97,59,82,24f34c79-06cd-4c83-96a8-2e7b11b7c07b,calibration-informed independent depolarizing plus symmetric readout
+0.8,0.4,2,Wplus,1,0.22782501531500213,0.18940493911752748,0.1107,0.0076471630033627495,5000,170,96,59,80,24f34c79-06cd-4c83-96a8-2e7b11b7c07b,calibration-informed independent depolarizing plus symmetric readout
+0.8,0.4,2,Wminus,-1,0.021977967401874576,0.04053608862261937,0.0857,0.007704615629608008,5000,170,96,59,80,24f34c79-06cd-4c83-96a8-2e7b11b7c07b,calibration-informed independent depolarizing plus symmetric readout
+1.0,0.5,2,Wplus,1,0.11555889039980191,0.04689700730202473,0.0067,0.007568422689041621,5000,172,98,59,82,24f34c79-06cd-4c83-96a8-2e7b11b7c07b,calibration-informed independent depolarizing plus symmetric readout
+1.0,0.5,2,Wminus,-1,-0.3110444438362346,-0.2512580466535434,-0.0334,0.007647018242426259,5000,172,98,59,82,24f34c79-06cd-4c83-96a8-2e7b11b7c07b,calibration-informed independent depolarizing plus symmetric readout

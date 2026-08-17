@@ -1,4 +1,4 @@
-"""Safety validation for the frozen periodic IQM hardware run."""
+"""Safety validation for the frozen periodic IQM hardware candidate."""
 
 from __future__ import annotations
 
@@ -6,13 +6,13 @@ from collections.abc import Mapping
 from pathlib import Path
 from typing import Any
 
-from .iqm_candidate import validate_hardware_manifest
+from .iqm_candidate import validate_submission_manifest
 
 
 EXPECTED_SECTORS = {"Wplus": 1, "Wminus": -1}
 
 
-def validate_periodic_hardware_manifest(
+def validate_periodic_submission_manifest(
     manifest: dict[str, Any],
     *,
     root: Path,
@@ -20,7 +20,7 @@ def validate_periodic_hardware_manifest(
     expected_shots: int,
 ) -> list[Path]:
     """Validate generic gates plus periodic-candidate invariants."""
-    qpy_paths = validate_hardware_manifest(
+    qpy_paths = validate_submission_manifest(
         manifest,
         root=root,
         expected_quantum_computer=expected_quantum_computer,
@@ -60,7 +60,7 @@ def require_explicit_periodic_hardware_consent(
     candidate_id: str,
     confirmation: str | None,
 ) -> None:
-    """Require three independent signals before periodic hardware execution."""
+    """Require three independent signals before periodic hardware submission."""
     if not submit:
         return
     if environment.get("Z2LGT_ALLOW_PERIODIC_IQM_HARDWARE") != "YES":
@@ -73,3 +73,4 @@ def require_explicit_periodic_hardware_consent(
         raise PermissionError(
             f"pass --confirm-candidate {expected} to confirm the frozen candidate"
         )
+

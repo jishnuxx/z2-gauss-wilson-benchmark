@@ -176,7 +176,7 @@ def main() -> None:
         "request_validated": True,
         "circuits_frozen": True,
         "human_review_approved": False,
-        "hardware_execution_started": False,
+        "submission_started": False,
         "hardware_submitted": False,
         "circuits": records,
         "review_note": (

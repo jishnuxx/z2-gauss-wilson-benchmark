@@ -1,4 +1,4 @@
-"""Frozen IQM hardware-run manifests and execution safety checks."""
+"""Frozen IQM candidate manifests and submission safety checks."""
 
 from __future__ import annotations
 
@@ -42,14 +42,14 @@ def resolve_artifact(path_text: str, *, root: Path) -> Path:
     return path if path.is_absolute() else root / path
 
 
-def validate_hardware_manifest(
+def validate_submission_manifest(
     manifest: dict[str, Any],
     *,
     root: Path,
     expected_quantum_computer: str | None = None,
     expected_shots: int | None = None,
 ) -> list[Path]:
-    """Validate approval gates and frozen QPY hashes before hardware execution."""
+    """Validate approval gates and frozen QPY hashes before submission."""
     if manifest.get("schema_version") != 1:
         raise PermissionError("unsupported or missing readiness manifest schema_version")
     failed = [gate for gate in REQUIRED_TRUE_GATES if manifest.get(gate) is not True]
@@ -57,9 +57,9 @@ def validate_hardware_manifest(
         raise PermissionError("hardware readiness gates are not satisfied: " + ", ".join(failed))
     if manifest.get("hardware_submitted") is True:
         raise PermissionError("this candidate manifest is already marked as submitted")
-    if manifest.get("hardware_execution_started") is True:
+    if manifest.get("submission_started") is True:
         raise PermissionError(
-            "this manifest has a prior hardware execution attempt; inspect its status before retrying"
+            "this candidate manifest has a prior submission attempt; inspect its status before retrying"
         )
     if expected_quantum_computer and manifest.get("quantum_computer") != expected_quantum_computer:
         raise PermissionError(

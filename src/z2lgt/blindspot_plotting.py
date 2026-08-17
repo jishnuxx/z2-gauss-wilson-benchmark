@@ -1,4 +1,4 @@
-"""Slide-ready matplotlib figures for the Gauss/string blind-spot result."""
+"""Slide-ready matplotlib figures for the Gauss/Wilson blind-spot result."""
 
 from __future__ import annotations
 
@@ -15,12 +15,12 @@ CASE_ORDER = ("no_error", "gauge_violating", "gauge_preserving_string")
 CASE_LABELS = {
     "no_error": "No error",
     "gauge_violating": "Gauge-violating\n$Z_0$",
-    "gauge_preserving_string": "Gauge-preserving\nstring $X_0$",
+    "gauge_preserving_string": "Sector-flip\n$X_0$",
 }
 TABLE_LABELS = {
     "no_error": "No error",
     "gauge_violating": "Gauge-violating Z0",
-    "gauge_preserving_string": "Gauge-preserving string X0",
+    "gauge_preserving_string": "Gauge-preserving sector-flip X0",
 }
 MODE_STYLE = {
     "ideal": {"marker": "o", "color": "#1768AC", "label": "Ideal"},
@@ -92,7 +92,7 @@ def algebraic_summary(summary: dict, output_dir: Path) -> list[Path]:
 
 def gauss_vs_string(summary: dict, output_dir: Path) -> list[Path]:
     fig, ax = plt.subplots(figsize=(7.2, 5.2))
-    offsets = {"no_error": (-10, 9), "gauge_violating": (8, 9), "gauge_preserving_string": (-10, 8)}
+    offsets = {"no_error": (-10, 9), "gauge_violating": (8, 9), "gauge_preserving_string": (-35, 18)}
     for mode, dataset in summary["datasets"].items():
         if mode not in MODE_STYLE or not dataset.get("records"):
             continue
@@ -122,7 +122,7 @@ def gauss_vs_string(summary: dict, output_dir: Path) -> list[Path]:
                     ha="right" if offsets[record["error_type"]][0] < 0 else "left",
                 )
     ax.axvspan(0.9, 1.02, color="#FDECEC", alpha=0.8, zorder=0)
-    ax.text(0.94, -0.55, "Gauss pass,\nwrong string sector", color="#9C2335", ha="center", weight="bold")
+    ax.text(0.94, -0.55, "Gauss pass,\nwrong Wilson sector", color="#9C2335", ha="center", weight="bold")
     ax.axhline(0, color="0.75", linewidth=1)
     ax.set(
         xlabel=r"joint local-check pass probability $P_{\rm Gauss}$",
@@ -162,7 +162,7 @@ def postselection_acceptance(summary: dict, output_dir: Path) -> list[Path]:
     x = np.arange(3)
     width = 0.23
     colors = ("#9E9E9E", "#1768AC", "#D1495B")
-    labels = ("All shots", "Gauss-only", "Gauss + string")
+    labels = ("All shots", "Gauss-only", "Gauss + Wilson")
     fig, ax = plt.subplots(figsize=(8.0, 4.8))
     for index in range(3):
         bars = ax.bar(x + (index - 1) * width, values[:, index], width, label=labels[index], color=colors[index])
@@ -171,7 +171,7 @@ def postselection_acceptance(summary: dict, output_dir: Path) -> list[Path]:
     ax.set(
         ylabel="acceptance fraction",
         ylim=(0, 1.12),
-        title="String-aware selection rejects the Gauss-preserving error",
+        title="Wilson-aware selection rejects the Gauss-preserving error",
     )
     ax.legend(frameon=False, ncols=3, loc="upper center")
     ax.grid(axis="y", alpha=0.22)

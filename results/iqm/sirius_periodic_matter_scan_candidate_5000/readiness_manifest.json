@@ -1,0 +1,3086 @@
+{
+  "all_tests_passed": true,
+  "approved_at_utc": "2026-08-14T09:24:13.804486+00:00",
+  "approved_by": "jishnu",
+  "backend_name": "IQMBackend",
+  "backend_qubit_count": 16,
+  "backend_run_called": true,
+  "batch": "periodic-matter-sirius-two-step-scan-t0.6-0.8-1.0",
+  "benchmark_type": "two_step_fixed_product_formula_scan",
+  "calibration_set_id": "9a9fbebd-5f96-43de-95b0-62e8b2704eda",
+  "candidate_id": "944b14b9a5d40e8dc39533dae1b24d82237e2d1042916d901e17c22e6c4f203d",
+  "circuits": [
+    {
+      "case": "Wplus",
+      "cz_count": 59,
+      "cz_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01938675826601355
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 8.000000000000001e-08,
+          "error": 0.019597665250953633
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.018136079675784567
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.013833641380440409
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.015623204723340556
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01204235983853863
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.016257210253366794
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.014985785470831625
+        }
+      ],
+      "depth": 172,
+      "dt": 0.3,
+      "link_components": [
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8",
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_indices": [
+        4,
+        1,
+        6,
+        5,
+        0,
+        2,
+        3,
+        13
+      ],
+      "matter_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8"
+      ],
+      "measurement_count": 4,
+      "measurement_loci": [
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.021700000000000053
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.010099999999999998
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.020199999999999996
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.013900000000000023
+        }
+      ],
+      "move_count": 82,
+      "move_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00953234317410745
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0066071577512212265
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008926948680792246
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008084250744819443
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0073197694234635735
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.006019579115326024
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008485364730109635
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00764929000556025
+        }
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 59,
+        "measure": 4,
+        "move": 82,
+        "r": 97
+      },
+      "qpy": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wplus_t0p6_dt0p3.qpy",
+      "qpy_sha256": "2406858aed63ef445188ca27f1089f3cfbfe222868967ebaa0d355b02eb8df73",
+      "r_count": 97,
+      "r_loci": [
+        {
+          "calibration_key_indices": [
+            0
+          ],
+          "component_indices": [
+            0
+          ],
+          "components": [
+            "QB1"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.001539502665365844
+        },
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0023610914605519673
+        },
+        {
+          "calibration_key_indices": [
+            2
+          ],
+          "component_indices": [
+            2
+          ],
+          "components": [
+            "QB3"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0017282112646516135
+        },
+        {
+          "calibration_key_indices": [
+            3
+          ],
+          "component_indices": [
+            3
+          ],
+          "components": [
+            "QB4"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0006419652351662419
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0010748147715912149
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0012192321214512525
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0013760295372984288
+        },
+        {
+          "calibration_key_indices": [
+            13
+          ],
+          "component_indices": [
+            13
+          ],
+          "components": [
+            "QB20"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0008441365400332357
+        }
+      ],
+      "source_qasm": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wplus_t0p6_dt0p3_source.qasm",
+      "source_qasm_sha256": "4995a2153a3a444e5787d1a129c06c7058ca17d117917c5d0f552de238ff158d",
+      "time": 0.6,
+      "trotter_steps": 2,
+      "wilson_sector": 1
+    },
+    {
+      "case": "Wminus",
+      "cz_count": 59,
+      "cz_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01938675826601355
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 8.000000000000001e-08,
+          "error": 0.019597665250953633
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.018136079675784567
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.013833641380440409
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.015623204723340556
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01204235983853863
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.016257210253366794
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.014985785470831625
+        }
+      ],
+      "depth": 172,
+      "dt": 0.3,
+      "link_components": [
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8",
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_indices": [
+        4,
+        1,
+        6,
+        5,
+        0,
+        2,
+        3,
+        13
+      ],
+      "matter_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8"
+      ],
+      "measurement_count": 4,
+      "measurement_loci": [
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.021700000000000053
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.010099999999999998
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.020199999999999996
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.013900000000000023
+        }
+      ],
+      "move_count": 82,
+      "move_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00953234317410745
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0066071577512212265
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008926948680792246
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008084250744819443
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0073197694234635735
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.006019579115326024
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008485364730109635
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00764929000556025
+        }
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 59,
+        "measure": 4,
+        "move": 82,
+        "r": 97
+      },
+      "qpy": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wminus_t0p6_dt0p3.qpy",
+      "qpy_sha256": "0807d9cd31670ca5047db35f87a74cbcf34d724c2d16cb3d91470d94529e5760",
+      "r_count": 97,
+      "r_loci": [
+        {
+          "calibration_key_indices": [
+            0
+          ],
+          "component_indices": [
+            0
+          ],
+          "components": [
+            "QB1"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.001539502665365844
+        },
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0023610914605519673
+        },
+        {
+          "calibration_key_indices": [
+            2
+          ],
+          "component_indices": [
+            2
+          ],
+          "components": [
+            "QB3"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0017282112646516135
+        },
+        {
+          "calibration_key_indices": [
+            3
+          ],
+          "component_indices": [
+            3
+          ],
+          "components": [
+            "QB4"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0006419652351662419
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0010748147715912149
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0012192321214512525
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0013760295372984288
+        },
+        {
+          "calibration_key_indices": [
+            13
+          ],
+          "component_indices": [
+            13
+          ],
+          "components": [
+            "QB20"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0008441365400332357
+        }
+      ],
+      "source_qasm": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wminus_t0p6_dt0p3_source.qasm",
+      "source_qasm_sha256": "ae922090908217be9ddf82e38cff35e3885b0e2da6385e1d16ff4101fc8fcde9",
+      "time": 0.6,
+      "trotter_steps": 2,
+      "wilson_sector": -1
+    },
+    {
+      "case": "Wplus",
+      "cz_count": 59,
+      "cz_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01938675826601355
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 8.000000000000001e-08,
+          "error": 0.019597665250953633
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.018136079675784567
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.013833641380440409
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.015623204723340556
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01204235983853863
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.016257210253366794
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.014985785470831625
+        }
+      ],
+      "depth": 170,
+      "dt": 0.4,
+      "link_components": [
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8",
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_indices": [
+        4,
+        1,
+        6,
+        5,
+        0,
+        2,
+        3,
+        13
+      ],
+      "matter_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8"
+      ],
+      "measurement_count": 4,
+      "measurement_loci": [
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.021700000000000053
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.010099999999999998
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.020199999999999996
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.013900000000000023
+        }
+      ],
+      "move_count": 80,
+      "move_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00953234317410745
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0066071577512212265
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008926948680792246
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008084250744819443
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0073197694234635735
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.006019579115326024
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008485364730109635
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00764929000556025
+        }
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 59,
+        "measure": 4,
+        "move": 80,
+        "r": 96
+      },
+      "qpy": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wplus_t0p8_dt0p4.qpy",
+      "qpy_sha256": "a4cd2e11a5d342089143280346ae24006f3e06d1912c5848ce225a6db09eed3d",
+      "r_count": 96,
+      "r_loci": [
+        {
+          "calibration_key_indices": [
+            0
+          ],
+          "component_indices": [
+            0
+          ],
+          "components": [
+            "QB1"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.001539502665365844
+        },
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0023610914605519673
+        },
+        {
+          "calibration_key_indices": [
+            2
+          ],
+          "component_indices": [
+            2
+          ],
+          "components": [
+            "QB3"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0017282112646516135
+        },
+        {
+          "calibration_key_indices": [
+            3
+          ],
+          "component_indices": [
+            3
+          ],
+          "components": [
+            "QB4"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0006419652351662419
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0010748147715912149
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0012192321214512525
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0013760295372984288
+        },
+        {
+          "calibration_key_indices": [
+            13
+          ],
+          "component_indices": [
+            13
+          ],
+          "components": [
+            "QB20"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0008441365400332357
+        }
+      ],
+      "source_qasm": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wplus_t0p8_dt0p4_source.qasm",
+      "source_qasm_sha256": "5199a4be730724c100e8549b185f242536fc229db9e65bfac54a0e1d2a30864c",
+      "time": 0.8,
+      "trotter_steps": 2,
+      "wilson_sector": 1
+    },
+    {
+      "case": "Wminus",
+      "cz_count": 59,
+      "cz_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01938675826601355
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 8.000000000000001e-08,
+          "error": 0.019597665250953633
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.018136079675784567
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.013833641380440409
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.015623204723340556
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01204235983853863
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.016257210253366794
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.014985785470831625
+        }
+      ],
+      "depth": 170,
+      "dt": 0.4,
+      "link_components": [
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8",
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_indices": [
+        4,
+        1,
+        6,
+        5,
+        0,
+        2,
+        3,
+        13
+      ],
+      "matter_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8"
+      ],
+      "measurement_count": 4,
+      "measurement_loci": [
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.021700000000000053
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.010099999999999998
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.020199999999999996
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.013900000000000023
+        }
+      ],
+      "move_count": 80,
+      "move_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00953234317410745
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0066071577512212265
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008926948680792246
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008084250744819443
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0073197694234635735
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.006019579115326024
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008485364730109635
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00764929000556025
+        }
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 59,
+        "measure": 4,
+        "move": 80,
+        "r": 96
+      },
+      "qpy": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wminus_t0p8_dt0p4.qpy",
+      "qpy_sha256": "7bd65d9557f6c5cc010d4842200785b49008362a5ece9d526a4882ae24011bb4",
+      "r_count": 96,
+      "r_loci": [
+        {
+          "calibration_key_indices": [
+            0
+          ],
+          "component_indices": [
+            0
+          ],
+          "components": [
+            "QB1"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.001539502665365844
+        },
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0023610914605519673
+        },
+        {
+          "calibration_key_indices": [
+            2
+          ],
+          "component_indices": [
+            2
+          ],
+          "components": [
+            "QB3"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0017282112646516135
+        },
+        {
+          "calibration_key_indices": [
+            3
+          ],
+          "component_indices": [
+            3
+          ],
+          "components": [
+            "QB4"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0006419652351662419
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0010748147715912149
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0012192321214512525
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0013760295372984288
+        },
+        {
+          "calibration_key_indices": [
+            13
+          ],
+          "component_indices": [
+            13
+          ],
+          "components": [
+            "QB20"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0008441365400332357
+        }
+      ],
+      "source_qasm": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wminus_t0p8_dt0p4_source.qasm",
+      "source_qasm_sha256": "69339264582aec2ff773bcfebb77d353dfe47e245ca2c0049ea88f9470f0f6ab",
+      "time": 0.8,
+      "trotter_steps": 2,
+      "wilson_sector": -1
+    },
+    {
+      "case": "Wplus",
+      "cz_count": 59,
+      "cz_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01938675826601355
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 8.000000000000001e-08,
+          "error": 0.019597665250953633
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.018136079675784567
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.013833641380440409
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.015623204723340556
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01204235983853863
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.016257210253366794
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.014985785470831625
+        }
+      ],
+      "depth": 172,
+      "dt": 0.5,
+      "link_components": [
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8",
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_indices": [
+        4,
+        1,
+        6,
+        5,
+        0,
+        2,
+        3,
+        13
+      ],
+      "matter_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8"
+      ],
+      "measurement_count": 4,
+      "measurement_loci": [
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.021700000000000053
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.010099999999999998
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.020199999999999996
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.013900000000000023
+        }
+      ],
+      "move_count": 82,
+      "move_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00953234317410745
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0066071577512212265
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008926948680792246
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008084250744819443
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0073197694234635735
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.006019579115326024
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008485364730109635
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00764929000556025
+        }
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 59,
+        "measure": 4,
+        "move": 82,
+        "r": 98
+      },
+      "qpy": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wplus_t1_dt0p5.qpy",
+      "qpy_sha256": "49773827a61e9d0d38f2591fe7351f4b71a8e4f8f5471f039e7adae578d8979c",
+      "r_count": 98,
+      "r_loci": [
+        {
+          "calibration_key_indices": [
+            0
+          ],
+          "component_indices": [
+            0
+          ],
+          "components": [
+            "QB1"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.001539502665365844
+        },
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0023610914605519673
+        },
+        {
+          "calibration_key_indices": [
+            2
+          ],
+          "component_indices": [
+            2
+          ],
+          "components": [
+            "QB3"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0017282112646516135
+        },
+        {
+          "calibration_key_indices": [
+            3
+          ],
+          "component_indices": [
+            3
+          ],
+          "components": [
+            "QB4"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0006419652351662419
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0010748147715912149
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0012192321214512525
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0013760295372984288
+        },
+        {
+          "calibration_key_indices": [
+            13
+          ],
+          "component_indices": [
+            13
+          ],
+          "components": [
+            "QB20"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0008441365400332357
+        }
+      ],
+      "source_qasm": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wplus_t1_dt0p5_source.qasm",
+      "source_qasm_sha256": "3e9b351ec224a45e41d1061141efe27b3523b0151dccd090e1a541c09d35c0e7",
+      "time": 1.0,
+      "trotter_steps": 2,
+      "wilson_sector": 1
+    },
+    {
+      "case": "Wminus",
+      "cz_count": 59,
+      "cz_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01938675826601355
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 8.000000000000001e-08,
+          "error": 0.019597665250953633
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.018136079675784567
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.013833641380440409
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.015623204723340556
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.01204235983853863
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.016257210253366794
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 1.04e-07,
+          "error": 0.014985785470831625
+        }
+      ],
+      "depth": 172,
+      "dt": 0.5,
+      "link_components": [
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8",
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "logical_to_physical_indices": [
+        4,
+        1,
+        6,
+        5,
+        0,
+        2,
+        3,
+        13
+      ],
+      "matter_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8"
+      ],
+      "measurement_count": 4,
+      "measurement_loci": [
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.021700000000000053
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.010099999999999998
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.020199999999999996
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-07,
+          "error": 0.013900000000000023
+        }
+      ],
+      "move_count": 82,
+      "move_loci": [
+        {
+          "calibration_key_indices": [
+            0,
+            16
+          ],
+          "component_indices": [
+            0,
+            16
+          ],
+          "components": [
+            "QB1",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00953234317410745
+        },
+        {
+          "calibration_key_indices": [
+            1,
+            16
+          ],
+          "component_indices": [
+            1,
+            16
+          ],
+          "components": [
+            "QB2",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0066071577512212265
+        },
+        {
+          "calibration_key_indices": [
+            2,
+            16
+          ],
+          "component_indices": [
+            2,
+            16
+          ],
+          "components": [
+            "QB3",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008926948680792246
+        },
+        {
+          "calibration_key_indices": [
+            3,
+            16
+          ],
+          "component_indices": [
+            3,
+            16
+          ],
+          "components": [
+            "QB4",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008084250744819443
+        },
+        {
+          "calibration_key_indices": [
+            4,
+            16
+          ],
+          "component_indices": [
+            4,
+            16
+          ],
+          "components": [
+            "QB5",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.0073197694234635735
+        },
+        {
+          "calibration_key_indices": [
+            5,
+            16
+          ],
+          "component_indices": [
+            5,
+            16
+          ],
+          "components": [
+            "QB8",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.006019579115326024
+        },
+        {
+          "calibration_key_indices": [
+            6,
+            16
+          ],
+          "component_indices": [
+            6,
+            16
+          ],
+          "components": [
+            "QB9",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.008485364730109635
+        },
+        {
+          "calibration_key_indices": [
+            13,
+            16
+          ],
+          "component_indices": [
+            13,
+            16
+          ],
+          "components": [
+            "QB20",
+            "COMPR1"
+          ],
+          "duration_seconds": 6.4e-08,
+          "error": 0.00764929000556025
+        }
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 59,
+        "measure": 4,
+        "move": 82,
+        "r": 98
+      },
+      "qpy": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wminus_t1_dt0p5.qpy",
+      "qpy_sha256": "a5817fc82e4933ee8e2dfe7b4551bc4fa3e57acd435c748c78b2894be76bb564",
+      "r_count": 98,
+      "r_loci": [
+        {
+          "calibration_key_indices": [
+            0
+          ],
+          "component_indices": [
+            0
+          ],
+          "components": [
+            "QB1"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.001539502665365844
+        },
+        {
+          "calibration_key_indices": [
+            1
+          ],
+          "component_indices": [
+            1
+          ],
+          "components": [
+            "QB2"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0023610914605519673
+        },
+        {
+          "calibration_key_indices": [
+            2
+          ],
+          "component_indices": [
+            2
+          ],
+          "components": [
+            "QB3"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0017282112646516135
+        },
+        {
+          "calibration_key_indices": [
+            3
+          ],
+          "component_indices": [
+            3
+          ],
+          "components": [
+            "QB4"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0006419652351662419
+        },
+        {
+          "calibration_key_indices": [
+            4
+          ],
+          "component_indices": [
+            4
+          ],
+          "components": [
+            "QB5"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0010748147715912149
+        },
+        {
+          "calibration_key_indices": [
+            5
+          ],
+          "component_indices": [
+            5
+          ],
+          "components": [
+            "QB8"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0012192321214512525
+        },
+        {
+          "calibration_key_indices": [
+            6
+          ],
+          "component_indices": [
+            6
+          ],
+          "components": [
+            "QB9"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0013760295372984288
+        },
+        {
+          "calibration_key_indices": [
+            13
+          ],
+          "component_indices": [
+            13
+          ],
+          "components": [
+            "QB20"
+          ],
+          "duration_seconds": 4e-08,
+          "error": 0.0008441365400332357
+        }
+      ],
+      "source_qasm": "results/iqm/sirius_periodic_matter_scan_candidate_5000/circuits/periodic_matter_Wminus_t1_dt0p5_source.qasm",
+      "source_qasm_sha256": "6bbe107ca0f3637ce48d6fdddf6db5790c05b286d3e30443d7d084a0ce545d83",
+      "time": 1.0,
+      "trotter_steps": 2,
+      "wilson_sector": -1
+    }
+  ],
+  "circuits_frozen": true,
+  "fixed_initial_layout_components": [
+    "QB5",
+    "QB2",
+    "QB9",
+    "QB8",
+    "QB1",
+    "QB3",
+    "QB4",
+    "QB20"
+  ],
+  "fixed_initial_layout_indices": [
+    4,
+    1,
+    6,
+    5,
+    0,
+    2,
+    3,
+    13
+  ],
+  "generated_at_utc": "2026-08-14T09:03:04.834390+00:00",
+  "hardware_checks": {
+    "matter_only_measurements": true,
+    "maximum_cz_error": true,
+    "maximum_move_error": true,
+    "maximum_native_cz_count": true,
+    "maximum_native_depth": true,
+    "maximum_native_move_count": true,
+    "maximum_r_error": true,
+    "maximum_readout_error": true,
+    "same_fixed_mapping_for_all_circuits": true,
+    "six_circuit_scan": true,
+    "two_trotter_steps_for_every_point": true
+  },
+  "hardware_credits_consumed": true,
+  "hardware_submitted": true,
+  "hardware_thresholds": {
+    "maximum_cz_error": 0.025,
+    "maximum_move_error": 0.012,
+    "maximum_native_cz_count": 65,
+    "maximum_native_depth": 180,
+    "maximum_native_move_count": 90,
+    "maximum_r_error": 0.003,
+    "maximum_readout_error": 0.025,
+    "threshold_role": "operational acceptance gates, not physics claims"
+  },
+  "human_review_approved": true,
+  "job_id": "019fff99-c331-7740-9a2d-72fa21fc9ea3",
+  "maximum_cz_error": 0.019597665250953633,
+  "maximum_move_error": 0.00953234317410745,
+  "maximum_native_cz_count": 59,
+  "maximum_native_depth": 172,
+  "maximum_native_move_count": 82,
+  "maximum_r_error": 0.0023610914605519673,
+  "maximum_readout_error": 0.021700000000000053,
+  "native_operations": [
+    "id",
+    "delay",
+    "measure",
+    "r",
+    "if_else",
+    "reset",
+    "cz"
+  ],
+  "optimization_level": 3,
+  "physics_interpretation": "Each hardware target is the corresponding two-step Trotter result, not the exact continuous-time value. Exact-state fidelity is reported descriptively and is not used as a freeze gate.",
+  "physics_metrics_by_point": [
+    {
+      "candidate": "t=0.6,dt=0.3",
+      "dt": 0.3,
+      "exact_Wminus_imbalance": 0.38077716900495706,
+      "exact_Wplus_imbalance": 0.45457684680307253,
+      "exact_sector_separation": 0.07379967779811547,
+      "maximum_absolute_trotter_observable_error": 0.01684292343010202,
+      "minimum_gauss_expectation": 0.9999999999999882,
+      "minimum_state_fidelity": 0.9645376090391543,
+      "separation_retained": 0.7367320418525868,
+      "source_max_depth": 138,
+      "source_max_two_qubit_gate_count": 80,
+      "source_measurement_count": 8,
+      "source_qubit_count": 12,
+      "source_resources": {
+        "Wminus": {
+          "depth": 138,
+          "measurement_count": 8,
+          "qubit_count": 12,
+          "two_qubit_gate_count": 80
+        },
+        "Wplus": {
+          "depth": 138,
+          "measurement_count": 8,
+          "qubit_count": 12,
+          "two_qubit_gate_count": 80
+        }
+      },
+      "time": 0.6,
+      "trotter_Wminus_imbalance": 0.3833633360607019,
+      "trotter_Wminus_wilson": -0.9999999999999882,
+      "trotter_Wplus_imbalance": 0.4377339233729705,
+      "trotter_Wplus_wilson": 0.9999999999999882,
+      "trotter_sector_separation": 0.054370587312268626,
+      "trotter_steps": 2
+    },
+    {
+      "candidate": "t=0.8,dt=0.4",
+      "dt": 0.4,
+      "exact_Wminus_imbalance": 0.021977967401874576,
+      "exact_Wplus_imbalance": 0.22782501531500213,
+      "exact_sector_separation": 0.20584704791312755,
+      "maximum_absolute_trotter_observable_error": 0.038420076197474645,
+      "minimum_gauss_expectation": 0.9999999999999899,
+      "minimum_state_fidelity": 0.9120835591783525,
+      "separation_retained": 0.7232012895212099,
+      "source_max_depth": 138,
+      "source_max_two_qubit_gate_count": 80,
+      "source_measurement_count": 8,
+      "source_qubit_count": 12,
+      "source_resources": {
+        "Wminus": {
+          "depth": 138,
+          "measurement_count": 8,
+          "qubit_count": 12,
+          "two_qubit_gate_count": 80
+        },
+        "Wplus": {
+          "depth": 138,
+          "measurement_count": 8,
+          "qubit_count": 12,
+          "two_qubit_gate_count": 80
+        }
+      },
+      "time": 0.8,
+      "trotter_Wminus_imbalance": 0.04053608862261937,
+      "trotter_Wminus_wilson": -0.9999999999999899,
+      "trotter_Wplus_imbalance": 0.18940493911752748,
+      "trotter_Wplus_wilson": 0.9999999999999899,
+      "trotter_sector_separation": 0.1488688504949081,
+      "trotter_steps": 2
+    },
+    {
+      "candidate": "t=1,dt=0.5",
+      "dt": 0.5,
+      "exact_Wminus_imbalance": -0.3110444438362346,
+      "exact_Wplus_imbalance": 0.11555889039980191,
+      "exact_sector_separation": 0.42660333423603647,
+      "maximum_absolute_trotter_observable_error": 0.06866188309777718,
+      "minimum_gauss_expectation": 0.9999999999999856,
+      "minimum_state_fidelity": 0.828568663277655,
+      "separation_retained": 0.6989046498886508,
+      "source_max_depth": 138,
+      "source_max_two_qubit_gate_count": 80,
+      "source_measurement_count": 8,
+      "source_qubit_count": 12,
+      "source_resources": {
+        "Wminus": {
+          "depth": 138,
+          "measurement_count": 8,
+          "qubit_count": 12,
+          "two_qubit_gate_count": 80
+        },
+        "Wplus": {
+          "depth": 138,
+          "measurement_count": 8,
+          "qubit_count": 12,
+          "two_qubit_gate_count": 80
+        }
+      },
+      "time": 1.0,
+      "trotter_Wminus_imbalance": -0.2512580466535434,
+      "trotter_Wminus_wilson": -0.9999999999999856,
+      "trotter_Wplus_imbalance": 0.04689700730202473,
+      "trotter_Wplus_wilson": 0.999999999999986,
+      "trotter_sector_separation": 0.29815505395556813,
+      "trotter_steps": 2
+    }
+  ],
+  "points": [
+    {
+      "dt": 0.3,
+      "time": 0.6,
+      "trotter_steps": 2
+    },
+    {
+      "dt": 0.4,
+      "time": 0.8,
+      "trotter_steps": 2
+    },
+    {
+      "dt": 0.5,
+      "time": 1.0,
+      "trotter_steps": 2
+    }
+  ],
+  "qpy_sha256": [
+    "2406858aed63ef445188ca27f1089f3cfbfe222868967ebaa0d355b02eb8df73",
+    "0807d9cd31670ca5047db35f87a74cbcf34d724c2d16cb3d91470d94529e5760",
+    "a4cd2e11a5d342089143280346ae24006f3e06d1912c5848ce225a6db09eed3d",
+    "7bd65d9557f6c5cc010d4842200785b49008362a5ece9d526a4882ae24011bb4",
+    "49773827a61e9d0d38f2591fe7351f4b71a8e4f8f5471f039e7adae578d8979c",
+    "a5817fc82e4933ee8e2dfe7b4551bc4fa3e57acd435c748c78b2894be76bb564"
+  ],
+  "quantum_computer": "sirius",
+  "readout_mode": "matter_only",
+  "request_type": "PostJobsRequest",
+  "request_validated": true,
+  "result_completed": true,
+  "result_completed_at_utc": "2026-08-14T09:28:26.917400+00:00",
+  "review_note": "Six reduced matter-readout circuits for a two-step Sirius scan. The circuits do not directly measure Wilson or Gauss operators; sector certification remains a separate diagnostic layer.",
+  "schema_version": 1,
+  "seed_transpiler": 7,
+  "server_url": "https://resonance.meetiqm.com",
+  "shots": 5000,
+  "submission_started": true,
+  "submission_started_at_utc": "2026-08-14T09:28:14.471382+00:00",
+  "submitted_at_utc": "2026-08-14T09:28:14.940623+00:00",
+  "test_output": "........................................................................ [ 72%]\n...........................                                              [100%]\n99 passed in 17.42s",
+  "use_metrics": true,
+  "wilson_sectors": {
+    "Wminus": -1,
+    "Wplus": 1
+  }
+}

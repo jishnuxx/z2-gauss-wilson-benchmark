@@ -244,8 +244,8 @@
   "seed_transpiler": 7,
   "server_url": "https://resonance.meetiqm.com",
   "shots": 5000,
-  "hardware_execution_started": true,
-  "hardware_execution_started_at_utc": "2026-07-18T22:12:04.335333+00:00",
+  "submission_started": true,
+  "submission_started_at_utc": "2026-07-18T22:12:04.335333+00:00",
   "submitted_at_utc": "2026-07-18T22:12:04.789058+00:00",
   "test_output": "........................................................................ [ 82%]\n...............                                                          [100%]\n87 passed in 36.58s",
   "use_metrics": true

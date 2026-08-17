@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "analysis": "inverse-variance combination of two independent same-calibration jobs per device",
+  "claim_boundary": "The reduced circuits prepare nominal W sectors and measure matter only; they do not hardware-certify Gauss or Wilson sectors.",
+  "devices": {
+    "emerald": {
+      "quantum_computer": "emerald",
+      "calibration_set_id": "4ce7ac76-bb1c-4106-9b6f-e6999749446a",
+      "shots_per_circuit_per_job": 5000,
+      "number_of_jobs": 2,
+      "job_ids": [
+        "019fffb3-5e4e-7913-b11a-c479eeaf4b2c",
+        "019fffd6-93d7-73d1-a221-15a57b2a3988"
+      ],
+      "candidate_ids": [
+        "6d256c7375249052e488bb5df4b3915d1307b32fc48d98d7eb0441e214d2a018",
+        "805434ad4a6af5b545048db7619f0557c9775012b2dd9115d053aadc34d97be7"
+      ],
+      "fixed_initial_layout_indices": [
+        17,
+        24,
+        16,
+        10,
+        8,
+        7,
+        9,
+        3
+      ],
+      "fixed_initial_layout_components": [
+        "QB18",
+        "QB25",
+        "QB17",
+        "QB11",
+        "QB9",
+        "QB8",
+        "QB10",
+        "QB4"
+      ],
+      "resources": {
+        "maximum_native_depth": 114,
+        "maximum_native_cz_count": 76,
+        "maximum_native_move_count": 0,
+        "maximum_r_error": 0.00045121923061541835,
+        "maximum_cz_error": 0.0072414646295252405,
+        "maximum_move_error": null,
+        "maximum_readout_error": 0.011700000000000044
+      },
+      "points": [
+        {
+          "time": 0.6,
+          "dt": 0.3,
+          "trotter_steps": 2,
+          "exact_sector_separation": 0.07379967779811547,
+          "trotter_sector_separation": 0.054370587312268626,
+          "hardware_sector_separation": -0.003404263316194404,
+          "hardware_sector_separation_se": 0.007895163448656208,
+          "hardware_sector_separation_z": 0.43118338693467134,
+          "separation_retained": -0.06261222260930475,
+          "repeat_consistency_z": 0.8989429345347665,
+          "replicate_separations": [
+            -0.010699999999999987,
+            0.003500000000000003
+          ],
+          "replicate_separation_ses": [
+            0.011322611977807947,
+            0.011014650516471233
+          ],
+          "sectors": {
+            "Wplus": {
+              "exact_O_LR": 0.45457684680307253,
+              "trotter_O_LR": 0.4377339233729705,
+              "hardware_O_LR": 0.27801875049932245,
+              "hardware_O_LR_se": 0.005551372591376323,
+              "replicate_values": [
+                0.2823,
+                0.2739
+              ],
+              "replicate_ses": [
+                0.007927883828614039,
+                0.007775973122381533
+              ]
+            },
+            "Wminus": {
+              "exact_O_LR": 0.38077716900495706,
+              "trotter_O_LR": 0.3833633360607019,
+              "hardware_O_LR": 0.28129767846098636,
+              "hardware_O_LR_se": 0.005613532428490527,
+              "replicate_values": [
+                0.293,
+                0.2704
+              ],
+              "replicate_ses": [
+                0.00808394705573954,
+                0.007801074797744219
+              ]
+            }
+          }
+        },
+        {
+          "time": 0.8,
+          "dt": 0.4,
+          "trotter_steps": 2,
+          "exact_sector_separation": 0.20584704791312755,
+          "trotter_sector_separation": 0.1488688504949081,
+          "hardware_sector_separation": 0.05365930416359875,
+          "hardware_sector_separation_se": 0.008092728919860582,
+          "hardware_sector_separation_z": 6.630557466457578,
+          "separation_retained": 0.36044682272490647,
+          "repeat_consistency_z": 1.0625401045220768,
+          "replicate_separations": [
+            0.06240000000000001,
+            0.045200000000000004
+          ],
+          "replicate_separation_ses": [
+            0.01153963032336825,
+            0.011352361516442295
+          ],
+          "sectors": {
+            "Wplus": {
+              "exact_O_LR": 0.22782501531500213,
+              "trotter_O_LR": 0.18940493911752748,
+              "hardware_O_LR": 0.16026095819206967,
+              "hardware_O_LR_se": 0.005687676709240566,
+              "replicate_values": [
+                0.1645,
+                0.1562
+              ],
+              "replicate_ses": [
+                0.008131294484889844,
+                0.007958662701735763
+              ]
+            },
+            "Wminus": {
+              "exact_O_LR": 0.021977967401874576,
+              "trotter_O_LR": 0.04053608862261937,
+              "hardware_O_LR": 0.1066006593648718,
+              "hardware_O_LR_se": 0.005756816301835134,
+              "replicate_values": [
+                0.1021,
+                0.111
+              ],
+              "replicate_ses": [
+                0.008188108328545734,
+                0.008095418457374517
+              ]
+            }
+          }
+        },
+        {
+          "time": 1.0,
+          "dt": 0.5,
+          "trotter_steps": 2,
+          "exact_sector_separation": 0.42660333423603647,
+          "trotter_sector_separation": 0.29815505395556813,
+          "hardware_sector_separation": 0.10408035153481375,
+          "hardware_sector_separation_se": 0.00799825506724178,
+          "hardware_sector_separation_z": 13.012882267420128,
+          "separation_retained": 0.3490812922806403,
+          "repeat_consistency_z": 1.4189009935104708,
+          "replicate_separations": [
+            0.1156,
+            0.09290000000000001
+          ],
+          "replicate_separation_ses": [
+            0.011396734971034467,
+            0.011227642228001388
+          ],
+          "sectors": {
+            "Wplus": {
+              "exact_O_LR": 0.11555889039980191,
+              "trotter_O_LR": 0.04689700730202473,
+              "hardware_O_LR": 0.02550159383981998,
+              "hardware_O_LR_se": 0.005554653782037636,
+              "replicate_values": [
+                0.0296,
+                0.0216
+              ],
+              "replicate_ses": [
+                0.0079539152623095,
+                0.007760585544918631
+              ]
+            },
+            "Wminus": {
+              "exact_O_LR": -0.3110444438362346,
+              "trotter_O_LR": -0.2512580466535434,
+              "hardware_O_LR": -0.07860629877851535,
+              "hardware_O_LR_se": 0.0057543327045872835,
+              "replicate_values": [
+                -0.086,
+                -0.0713
+              ],
+              "replicate_ses": [
+                0.008162156577767912,
+                0.008113769900607238
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "sirius": {
+      "quantum_computer": "sirius",
+      "calibration_set_id": "9a9fbebd-5f96-43de-95b0-62e8b2704eda",
+      "shots_per_circuit_per_job": 5000,
+      "number_of_jobs": 2,
+      "job_ids": [
+        "019fff99-c331-7740-9a2d-72fa21fc9ea3",
+        "01a0000a-b632-7230-ac9d-4aee47297ba1"
+      ],
+      "candidate_ids": [
+        "944b14b9a5d40e8dc39533dae1b24d82237e2d1042916d901e17c22e6c4f203d",
+        "77f18c58a98fda40f75eb8b9c71a9c3ecffed3e9d3848b7e8cbc7b0370066b1f"
+      ],
+      "fixed_initial_layout_indices": [
+        4,
+        1,
+        6,
+        5,
+        0,
+        2,
+        3,
+        13
+      ],
+      "fixed_initial_layout_components": [
+        "QB5",
+        "QB2",
+        "QB9",
+        "QB8",
+        "QB1",
+        "QB3",
+        "QB4",
+        "QB20"
+      ],
+      "resources": {
+        "maximum_native_depth": 172,
+        "maximum_native_cz_count": 59,
+        "maximum_native_move_count": 82,
+        "maximum_r_error": 0.0023610914605519673,
+        "maximum_cz_error": 0.019597665250953633,
+        "maximum_move_error": 0.00953234317410745,
+        "maximum_readout_error": 0.021700000000000053
+      },
+      "points": [
+        {
+          "time": 0.6,
+          "dt": 0.3,
+          "trotter_steps": 2,
+          "exact_sector_separation": 0.07379967779811547,
+          "trotter_sector_separation": 0.054370587312268626,
+          "hardware_sector_separation": 0.005350411535142246,
+          "hardware_sector_separation_se": 0.006997090077708087,
+          "hardware_sector_separation_z": 0.764662377605804,
+          "separation_retained": 0.09840635901931732,
+          "repeat_consistency_z": 0.007145585636931129,
+          "replicate_separations": [
+            0.005400000000000002,
+            0.005299999999999999
+          ],
+          "replicate_separation_ses": [
+            0.009854906392249497,
+            0.009936355770603226
+          ],
+          "sectors": {
+            "Wplus": {
+              "exact_O_LR": 0.45457684680307253,
+              "trotter_O_LR": 0.4377339233729705,
+              "hardware_O_LR": -0.065992911188772,
+              "hardware_O_LR_se": 0.00494845405211485,
+              "replicate_values": [
+                -0.0547,
+                -0.0776
+              ],
+              "replicate_ses": [
+                0.006950653350585109,
+                0.007046676379684256
+              ]
+            },
+            "Wminus": {
+              "exact_O_LR": 0.38077716900495706,
+              "trotter_O_LR": 0.3833633360607019,
+              "hardware_O_LR": -0.07146879657979013,
+              "hardware_O_LR_se": 0.004946776290294576,
+              "replicate_values": [
+                -0.0601,
+                -0.0829
+              ],
+              "replicate_ses": [
+                0.006986243482730902,
+                0.007005392066115929
+              ]
+            }
+          }
+        },
+        {
+          "time": 0.8,
+          "dt": 0.4,
+          "trotter_steps": 2,
+          "exact_sector_separation": 0.20584704791312755,
+          "trotter_sector_separation": 0.1488688504949081,
+          "hardware_sector_separation": -0.0004567857662172622,
+          "hardware_sector_separation_se": 0.007001072530235704,
+          "hardware_sector_separation_z": 0.06524511269445221,
+          "separation_retained": -0.0030683770627548844,
+          "repeat_consistency_z": 1.1281762907070803,
+          "replicate_separations": [
+            0.007599999999999996,
+            -0.008199999999999999
+          ],
+          "replicate_separation_ses": [
+            0.010000747972026892,
+            0.009804201140327548
+          ],
+          "sectors": {
+            "Wplus": {
+              "exact_O_LR": 0.22782501531500213,
+              "trotter_O_LR": 0.18940493911752748,
+              "hardware_O_LR": -0.06678771400198318,
+              "hardware_O_LR_se": 0.004946442300476199,
+              "replicate_values": [
+                -0.0566,
+                -0.0764
+              ],
+              "replicate_ses": [
+                0.007099245593723322,
+                0.00689583990533423
+              ]
+            },
+            "Wminus": {
+              "exact_O_LR": 0.021977967401874576,
+              "trotter_O_LR": 0.04053608862261937,
+              "hardware_O_LR": -0.06622130499533209,
+              "hardware_O_LR_se": 0.00495414680695983,
+              "replicate_values": [
+                -0.0642,
+                -0.0682
+              ],
+              "replicate_ses": [
+                0.007043839294021408,
+                0.006969200241060663
+              ]
+            }
+          }
+        },
+        {
+          "time": 1.0,
+          "dt": 0.5,
+          "trotter_steps": 2,
+          "exact_sector_separation": 0.42660333423603647,
+          "trotter_sector_separation": 0.29815505395556813,
+          "hardware_sector_separation": -0.004980308852742419,
+          "hardware_sector_separation_se": 0.006976482281938625,
+          "hardware_sector_separation_z": 0.7138710673194014,
+          "separation_retained": -0.016703754595703075,
+          "repeat_consistency_z": 1.8777350348356232,
+          "replicate_separations": [
+            0.008099999999999996,
+            -0.018100000000000005
+          ],
+          "replicate_separation_ses": [
+            0.009858829037974033,
+            0.009873659402673358
+          ],
+          "sectors": {
+            "Wplus": {
+              "exact_O_LR": 0.11555889039980191,
+              "trotter_O_LR": 0.04689700730202473,
+              "hardware_O_LR": -0.0849216949887246,
+              "hardware_O_LR_se": 0.004925059695218631,
+              "replicate_values": [
+                -0.0748,
+                -0.0949
+              ],
+              "replicate_ses": [
+                0.006990063805145129,
+                0.006940374485573527
+              ]
+            },
+            "Wminus": {
+              "exact_O_LR": -0.3110444438362346,
+              "trotter_O_LR": -0.2512580466535434,
+              "hardware_O_LR": -0.07988075845517531,
+              "hardware_O_LR_se": 0.004940797967073639,
+              "replicate_values": [
+                -0.0829,
+                -0.0768
+              ],
+              "replicate_ses": [
+                0.006952374989886549,
+                0.007022845007545019
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "device_comparison": [
+    {
+      "time": 0.6,
+      "emerald_minus_sirius": -0.00875467485133665,
+      "emerald_minus_sirius_se": 0.010549543849691225,
+      "emerald_minus_sirius_z": 0.8298628809048355
+    },
+    {
+      "time": 0.8,
+      "emerald_minus_sirius": 0.054116089929816015,
+      "emerald_minus_sirius_se": 0.010700807350100682,
+      "emerald_minus_sirius_z": 5.0571969160165136
+    },
+    {
+      "time": 1.0,
+      "emerald_minus_sirius": 0.10906066038755617,
+      "emerald_minus_sirius_se": 0.010613358994722754,
+      "emerald_minus_sirius_z": 10.275791146024934
+    }
+  ]
+}

@@ -18,7 +18,7 @@ from z2lgt.blindspot_circuits import CASES, joint_diagnostic_circuit
 from z2lgt.blindspot_model import BlindSpotModel
 from z2lgt.blindspot_workflow import EXPECTED
 from z2lgt.circuits import resource_metrics
-from z2lgt.iqm_candidate import load_manifest, validate_hardware_manifest
+from z2lgt.iqm_candidate import load_manifest, validate_submission_manifest
 
 
 def provider_class():
@@ -51,7 +51,7 @@ def main() -> None:
     )
     parser.add_argument("--shots", type=int, default=1000)
     parser.add_argument("--batch", default="blindspot-minimal")
-    parser.add_argument("--submit", action="store_true", help="execute the approved frozen hardware run")
+    parser.add_argument("--submit", action="store_true", help="submit the approved frozen candidate")
     parser.add_argument(
         "--manifest",
         type=Path,
@@ -73,7 +73,7 @@ def main() -> None:
         circuits = [joint_diagnostic_circuit(case) for case in CASES]
         report.update(
             {
-                "status": "dry-run only; no provider connection and no hardware execution",
+                "status": "dry-run only; no provider connection and no submission",
                 "circuits": [
                     {"error_type": case, **resource_metrics(circuit)}
                     for case, circuit in zip(CASES, circuits, strict=True)
@@ -87,13 +87,13 @@ def main() -> None:
     manifest_path = args.manifest.resolve()
     try:
         if os.environ.get("Z2LGT_ALLOW_IQM_HARDWARE") != "YES":
-            raise PermissionError("set Z2LGT_ALLOW_IQM_HARDWARE=YES for explicit hardware consent")
+            raise PermissionError("set Z2LGT_ALLOW_IQM_HARDWARE=YES for explicit submission consent")
         if not args.url:
             raise PermissionError("IQM server URL missing; set IQM_SERVER_URL")
         if not os.environ.get("IQM_TOKEN"):
             raise PermissionError("IQM_TOKEN is missing; load it from the system keychain")
         manifest = load_manifest(manifest_path)
-        qpy_paths = validate_hardware_manifest(
+        qpy_paths = validate_submission_manifest(
             manifest,
             root=_bootstrap.ROOT,
             expected_quantum_computer=args.quantum_computer,
@@ -111,8 +111,8 @@ def main() -> None:
         )
         circuits = [load_qpy_circuit(path) for path in qpy_paths]
         backend.create_run_request(circuits, shots=args.shots)
-        manifest["hardware_execution_started"] = True
-        manifest["hardware_execution_started_at_utc"] = datetime.now(timezone.utc).isoformat()
+        manifest["submission_started"] = True
+        manifest["submission_started_at_utc"] = datetime.now(timezone.utc).isoformat()
         manifest_path.write_text(
             json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
         )
@@ -165,7 +165,7 @@ def main() -> None:
             }
         )
     except Exception as exc:
-        report["status"] = f"hardware execution blocked or failed: {exc}"
+        report["status"] = f"submission blocked or failed: {exc}"
         write_report(output, report)
         raise SystemExit(str(exc)) from exc
     write_report(output, report)

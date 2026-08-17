@@ -1,9 +1,17 @@
 .venv/
 __pycache__/
 .pytest_cache/
+.ruff_cache/
 work/
 *.pyc
 .DS_Store
 dist/
 tmp/
 *.egg-info/
+.env
+.env.*
+*.pem
+*.p12
+*.token
+private_backups/
+outputs/
